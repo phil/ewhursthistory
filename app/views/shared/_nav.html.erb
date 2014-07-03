@@ -1,0 +1,10 @@
+<nav>
+  <%= link_to "Home", root_url %>
+  <%= link_to "News", posts_url %>
+  <%= link_to "Programme", "/programme" %>
+  <%= link_to "Publications", publications_url %>
+
+  <% Page.roots.each do |page| %>
+    <%= link_to page.title, page.full_path %>
+  <% end %>
+</nav>

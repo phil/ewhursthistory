@@ -1,0 +1,10 @@
+<div class="span8">
+  <article class="post">
+    <h1><%= @post.title %></h1>
+    <%= raw @post.body %>
+  </article>
+</div>
+
+<div class="span4">
+  <%= render "recent_posts", posts: recent_news_posts %>
+</div>

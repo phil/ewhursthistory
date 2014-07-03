@@ -1,0 +1,4 @@
+<article class="post">
+  <h1><%= link_to post.title, post %></h1>
+  <%= post.body.html_safe.to_s[0..100] %>
+</article>

@@ -1,0 +1,113 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+$primary-color: rgba(0, 0, 0, 0.7);
+$keyline: 1px solid rgba(0, 0, 0, 0.8);
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Baskerville Old Face", "Times New Roman", Times, serif; 
+  font-weight: normal;
+
+  color: #333;
+
+  a:link, a:hover {
+    /*text-decoration: none;*/
+  }
+}
+h1 {
+  margin-bottom: 0;
+  font-size: 1.6em
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 1.4em;
+}
+
+a {
+  -webkit-transition: 0.3s;
+
+  &:link {
+  }
+  &:hover {
+    color: #000;
+  }
+}
+
+body {
+  /*background-color: #eee;*/
+  color: $primary-color;
+}
+
+.container {
+  background-color: #fff;
+
+  >header {
+    h1 {
+      text-align: center;
+    }
+  }
+  >nav {
+    border-top: $keyline;
+    border-bottom: $keyline;
+
+    text-align: center;
+
+    a {
+      line-height: 3em;
+      display: inline-block;
+      padding: 0 0.8em;
+      &:link, &:visited {
+        text-decoration: none;
+      }
+      &:hover {
+      }
+    }
+  }
+  >footer {
+    clear: both;
+    display: block;
+    position: relative;
+    
+    margin-top: 2em;
+    padding-top: 90px;
+
+    background: url(image-path("illustration_houses_west.jpg")) 50% 0%
+    no-repeat;
+
+    p {
+      font-size: 0.8em;
+      text-align: center;
+    }
+  }
+}
+
+section>h2 {
+  font-size: 0.8em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+article {
+  img {
+    margin-left: -3px;
+    padding: 2px;
+    border: 1px solid #aaa;
+  }
+}
+
+.post {
+}
+
+.secondary {
+  margin-top: 40px;
+}
+
+.span-centered {
+  margin: 0 auto;
+  float: none;
+}

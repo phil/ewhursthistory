@@ -1,0 +1,24 @@
+<div class="span12">
+  <h1>News & Events</h1>
+</div>
+
+<section class="span6">
+  <h2>Latest</h2>
+    <%= render "post", post: @latest_post %>
+  </section>
+
+<section class="span3">
+  <h2>Recent</h2>
+<% @recent_posts.each do |post| %>
+  <%= render "post", post: post %>
+<% end %>
+</section>
+
+<section class="span3">
+  <h2>Archive</h2>
+  <% @archive.each do |post| %>
+    <%= render "post", post: post %>
+  <% end %>
+</section>
+
+<%#= paginate @posts %>
