@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 
-gem 'sqlite3'
+gem "pg"
 
 gem "unicorn"
 
@@ -41,6 +41,7 @@ gem "mini_magick"
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+#
 
 group :test, :development do
   gem "rspec-rails"
