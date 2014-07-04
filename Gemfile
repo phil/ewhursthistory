@@ -8,6 +8,7 @@ gem "pg"
 gem "unicorn"
 
 gem 'rails_12factor', group: :production
+gem 'newrelic_rpm', group: :production
 
 # Assets
 gem 'sass-rails', '~> 4.0.3' # Use SCSS for stylesheets
