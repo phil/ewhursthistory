@@ -8,9 +8,11 @@ class Post < ActiveRecord::Base
 
   # Past posts
   scope :news, -> { published.where(post_type: "News").order("published_at DESC") }
-  scope :meetings, -> { future.where(post_type: "Programme").order("published_at ASC") }
   # future posts
-  scope :events, -> { future.where(post_type: "Programme").order("published_at ASC") }
+  scope :meetings, -> { future.where(post_type: "Meeting").order("published_at ASC") }
+  scope :events, -> { future.where(post_type: "Event").order("published_at ASC") }
+
+  scope :programme, -> { future.where(post_type: ["Meeting", "Event"]).order("published_at ASC") }
 
   def self.next_meeting
     self.meetings.first

@@ -1,13 +1,6 @@
 ActiveAdmin.register Page do
 
-  permit_params :title, :body, :parent_id
-
-  #index do
-    ##selectable_column
-    #column :title
-    ##column :published_at
-    #actions
-  #end
+  permit_params :title, :body, :parent_id, :label
 
   index do
     Page.top_level.each do |page|
@@ -28,6 +21,8 @@ ActiveAdmin.register Page do
 
   sidebar "details", only: :show do
     dl do
+      dt "Label"
+      dd page.label
       if page.parent
         dt "Parent"
         dd link_to page.parent.title, resource_path(page.parent)
@@ -49,12 +44,6 @@ ActiveAdmin.register Page do
     render "images/list", images: page.images
   end
 
-
-  #filter :email
-  #filter :current_sign_in_at
-  #filter :sign_in_count
-  #filter :created_at
-
   form do |f|
     f.inputs "Page Details" do
       f.input :title
@@ -63,14 +52,9 @@ ActiveAdmin.register Page do
     f.inputs "Metadata" do
       f.input :parent_id, as: :select, collection: Page.roots.map{|p| [p.title, p.id]}
       f.input :published_at
+      f.input :label, label: "Navigation label"
       f.input :slug
     end
-
-    #f.inputs do
-      #f.has_many :images, :allow_destroy => true, :heading => 'Attached Images', :new_record => true do |cf|
-        #cf.input :file
-      #end
-    #end
 
     f.actions
   end

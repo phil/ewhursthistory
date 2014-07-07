@@ -13,6 +13,7 @@ class Page < ActiveRecord::Base
 
   before_validation :set_slug
   before_validation :set_full_path
+  before_validation :set_label
 
   scope :published, ->{ where "published_at IS NOT NULL and published_at <= ?", Time.current}
   scope :top_level, ->{ where ancestry: nil}
@@ -38,8 +39,6 @@ class Page < ActiveRecord::Base
   private
 
   def set_slug
-    #return if self.slug.present?
-    #self.slug ||= [self.parent.try(:slug), self.title.parameterize].compact.join("/")
     self.slug ||= self.title.parameterize
   end
 
@@ -49,6 +48,10 @@ class Page < ActiveRecord::Base
     parts << self.parent.slug if self.parent
     parts << self.parent.parent.slug if self.parent && self.parent.parent
     self.full_path = "/#{parts.reverse.join("/")}"
+  end
+
+  def set_label
+    self.label ||= self.title
   end
 
 end
