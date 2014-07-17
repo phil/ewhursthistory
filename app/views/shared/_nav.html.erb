@@ -4,7 +4,7 @@
   <%= link_to "Programme", "/programme" %>
   <%= link_to "Publications", publications_url %>
 
-  <% Page.roots.published.each do |page| %>
+  <% Page.top_level.published.each do |page| %>
     <%= link_to page.label, page.full_path %>
   <% end %>
 </nav>

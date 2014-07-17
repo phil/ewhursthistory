@@ -1,6 +1,6 @@
 ActiveAdmin.register Page do
 
-  permit_params :title, :body, :parent_id, :label
+  permit_params :title, :body, :parent_id, :label, :published_at
 
   index do
     Page.top_level.each do |page|
@@ -23,18 +23,22 @@ ActiveAdmin.register Page do
     dl do
       dt "Label"
       dd page.label
+
       if page.parent
         dt "Parent"
         dd link_to page.parent.title, resource_path(page.parent)
       end
+
       if page.children
         dt "Child pages"
         page.children.each do |child_page|
           dd link_to child_page.title, resource_path(child_page)
         end
       end
+
       dt "Slug"
       dd page.slug
+
       dt "Published date"
       dd page.published_at
     end
