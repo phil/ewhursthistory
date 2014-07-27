@@ -1,6 +1,6 @@
 ActiveAdmin.register Page do
 
-  permit_params :title, :body, :parent_id, :label, :published_at
+  permit_params :title, :body, :parent_id, :label, :published_at, :template
 
   index do
     Page.top_level.each do |page|
@@ -39,6 +39,9 @@ ActiveAdmin.register Page do
       dt "Slug"
       dd page.slug
 
+      dt "Template"
+      dd page.template
+
       dt "Published date"
       dd page.published_at
     end
@@ -55,6 +58,7 @@ ActiveAdmin.register Page do
     end
     f.inputs "Metadata" do
       f.input :parent_id, as: :select, collection: Page.roots.map{|p| [p.title, p.id]}
+      f.input :template, as: :select, collection: Page::TEMPLATES
       f.input :published_at
       f.input :label, label: "Navigation label"
       f.input :slug
