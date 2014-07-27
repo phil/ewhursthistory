@@ -4,14 +4,14 @@
 
 <section class="span6">
   <h2>Latest</h2>
-    <%= render "post", post: @latest_post %>
-  </section>
+  <%= render "post", post: @latest_post rescue nil %>
+</section>
 
 <section class="span3">
   <h2>Recent</h2>
-<% @recent_posts.each do |post| %>
-  <%= render "post", post: post %>
-<% end %>
+  <% @recent_posts.each do |post| %>
+    <%= render "post", post: post %>
+  <% end %>
 </section>
 
 <section class="span3">
@@ -20,5 +20,3 @@
     <%= render "post", post: post %>
   <% end %>
 </section>
-
-<%#= paginate @posts %>

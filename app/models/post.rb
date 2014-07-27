@@ -21,6 +21,12 @@ class Post < ActiveRecord::Base
     self.events
   end
 
+  #def programme_start_date
+  #end
+
+  #def programme_end_date
+  #end
+
   def to_param
     "#{self.id}-#{self.title.parameterize}"
   end

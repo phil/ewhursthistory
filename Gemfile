@@ -27,7 +27,10 @@ gem 'jquery-rails'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+group :development do
+  gem 'spring'
+  gem "spring-commands-rspec"
+end
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'active_admin_editor'
@@ -48,4 +51,5 @@ gem "mini_magick"
 
 group :test, :development do
   gem "rspec-rails"
+  gem "steak"
 end
