@@ -4,6 +4,7 @@ class Page < ActiveRecord::Base
   include Imageable
 
   TEMPLATES = [
+    "default",
     "world_war_one_index",
     "world_war_one_page"
   ]
