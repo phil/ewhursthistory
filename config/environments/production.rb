@@ -73,15 +73,13 @@ Rails.application.configure do
   # config.action_mailer.raise_delivery_errors = false
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    #:address - Allows you to use a remote mail server. Just change it from its default "localhost" setting.
-    #:port - On the off chance that your mail server doesn't run on port 25, you can change it.
-    #:domain - If you need to specify a HELO domain, you can do it here.
-    #:user_name - If your mail server requires authentication, set the username in this setting.
-    #:password - If your mail server requires authentication, set the password in this setting.
-    #:authentication - If your mail server requires authentication, you need to specify the authentication type here. This is a symbol and one of :plain, :login, :cram_md5.
-    #:enable_starttls_auto - Set this to false if there is a problem with your server certificate that you cannot resolve.
     address: "smtp.sendgrid.net",
-    user_name: "app24606968@heroku.com"
+    port: 587,
+    authentication: :plain,
+    user_name: ENV["SENDGRID_USERNAME"],
+    password: ENV["SENDGRID_PASSWORD"],
+    domain: "heroku.com",
+    enable_starttls_auto: true
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
