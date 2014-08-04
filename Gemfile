@@ -10,6 +10,8 @@ gem "unicorn"
 gem 'rails_12factor', group: :production
 gem 'newrelic_rpm', group: :production
 
+gem "postmark-rails"
+
 # Assets
 gem 'sass-rails', '~> 4.0.3' # Use SCSS for stylesheets
 gem 'uglifier', '>= 1.3.0' # Use Uglifier as compressor for JavaScript assets
