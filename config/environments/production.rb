@@ -1,3 +1,10 @@
+EwhurstHistory::Application.config.middleware.use ExceptionNotification::Rack,
+  :email => {
+  :email_prefix => "[EwhurstHistory] ",
+  :sender_address => %{"notifier" <notifier@example.com>},
+  :exception_recipients => %w{exceptions@example.com}
+}
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
