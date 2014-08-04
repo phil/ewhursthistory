@@ -61,7 +61,7 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
-  # Enable serving of images, stylesheets, and JavaScripts from an a
+  # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets.
@@ -71,8 +71,18 @@ Rails.application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.delivery_method = :postmark
-  config.action_mailer.postmark_settings = { :api_key => ENV["POSTMARK_API_KEY"]}
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    #:address - Allows you to use a remote mail server. Just change it from its default "localhost" setting.
+    #:port - On the off chance that your mail server doesn't run on port 25, you can change it.
+    #:domain - If you need to specify a HELO domain, you can do it here.
+    #:user_name - If your mail server requires authentication, set the username in this setting.
+    #:password - If your mail server requires authentication, set the password in this setting.
+    #:authentication - If your mail server requires authentication, you need to specify the authentication type here. This is a symbol and one of :plain, :login, :cram_md5.
+    #:enable_starttls_auto - Set this to false if there is a problem with your server certificate that you cannot resolve.
+    address: "smtp.sendgrid.net",
+    user_name: "app24606968@heroku.com"
+  }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).

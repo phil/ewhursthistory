@@ -37,6 +37,10 @@ class Page < ActiveRecord::Base
     siblings.where("id != ? AND published_at > ?", id, published_at).order("published_at ASC").first
   end
 
+  def published?
+    published_at && published_at <= Time.current
+  end
+
   private
 
   def set_slug
