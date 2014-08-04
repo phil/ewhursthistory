@@ -1,8 +1,8 @@
 EwhurstHistory::Application.config.middleware.use ExceptionNotification::Rack,
   :email => {
   :email_prefix => "[EwhurstHistory] ",
-  :sender_address => %{"notifier" <notifier@example.com>},
-  :exception_recipients => %w{exceptions@example.com}
+  :sender_address => %{"notifier" <notifier@ewhursthistory.com>},
+  :exception_recipients => %w{phil@maniacalrobot.co.uk}
 }
 
 Rails.application.configure do
