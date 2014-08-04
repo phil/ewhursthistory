@@ -5,13 +5,25 @@
 
   <section class="span3">
     <h2>Ewhurst History Society</h2>
-    <p>The Society meets on the 3rd Tuesday of the month at the Baptist Church, The Street, Ewhurst. We have a programme of talks from September - May, with additional social events and visits in June &amp; July. In addition a small group meets on an informal basis to further research into local history. Our latest project, 'Ewhurst Houses and People', has recently been published and is available to order from the <%= link_to "publications", publications_url %> page. We have also published two other books on local history and have organised several Local History Exhibitions.</p>
+    <p>Ewhurst History Society has a regular <%= link_to "programme", programme_url %> of lectures from September to May and meets on the 3rd Tuesday of the month at Ewhurst Baptist Church. We also have social events and outings (see <%= link_to "News and events", posts_url %>). We have produced a number of <%= link_to "publications", publications_url %> on local history and have organised several local history exhibitions.</p>
+    <p>The Society holds a collection of archive material, including photographs and information on various aspects of local history. Where possible we are willing to help with enquiries relating to family and local history and we are always interested to hear from people who may be able to help with our research.</p>
+
+    <p><#%= link_to "Contact us", contact_us_url %></p>
+
+    <h2>From our Archives</h2>
+    <%= image_tag "archives/children_on_the_mount.jpg" %>
   </section>
 
   <section class="span3">
     <h2>First World War</h2>
+    <%= image_tag "illustration_war_memorial.jpg", width: 180 %>
+    <p>August 2014 marks the 100th anniversary of the outbreak of the First World War. I am researching what happened in Ewhurst and I am planning to report events chronologically in the form of monthly posts on this web site. As the story unfolds month by month we can appreciate the time scale of these momentous years and see the part played by local people in the war and how it affected everyday life in Ewhurst
+      <p>Janet Balchin,</br />
+        Chairman, Ewhurst History Society<br />
+        August 2014.</p>
+
     <% if @current_first_world_war_page %>
-      <%= link_to @current_first_world_war_page.title, @current_first_world_war_page.full_path %>
+      <p><%= link_to @current_first_world_war_page.title, @current_first_world_war_page.full_path %></p>
     <% end %>
     </section>
 

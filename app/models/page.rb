@@ -4,8 +4,8 @@ class Page < ActiveRecord::Base
   include Imageable
 
   TEMPLATES = [
-    "wwi_index",
-    "wwi_page"
+    "world_war_one_index",
+    "world_war_one_page"
   ]
 
   def images_not_in_page
