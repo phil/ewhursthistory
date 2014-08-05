@@ -1,16 +1,24 @@
-<h1>Publications</h1>
-
 <% @publications.each do |publication| %>
+  <div class="row">
+    <div class="span2">
+    </div>
+
+    <div class="span3">
+      <%= image_tag publication.cover.url %>
+    </div>
+
+    <div class="span6">
   <article id="publication_<%= publication.id %>" class="publication">
     <header>
       <h1><%= publication.title %></h1>
     </header>
 
     <div class="cover">
-      <%= image_tag publication.cover.url %>
     </div>
 
     <%= publication.description.html_safe %>
   </article>
-  <hr />
+    </div>
+
+</div>
 <% end %>

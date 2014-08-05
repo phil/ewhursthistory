@@ -30,7 +30,8 @@ h2 {
 a {
   -webkit-transition: 0.3s;
 
-  &:link {
+  &:link, &:visited {
+    color: #369;
   }
   &:hover {
     color: #000;
@@ -55,6 +56,23 @@ body {
   >nav {
     border-top: $keyline;
     border-bottom: $keyline;
+
+    text-align: center;
+
+    a {
+      line-height: 3em;
+      display: inline-block;
+      padding: 0 0.8em;
+      &:link, &:visited {
+        text-decoration: none;
+      }
+      &:hover {
+      }
+    }
+  }
+  >.subnav {
+    /*border-top: $keyline;*/
+    /*border-bottom: $keyline;*/
 
     text-align: center;
 

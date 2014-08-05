@@ -1,5 +1,12 @@
+<% content_for :subnav do %>
+  <% @page.children.each do |page| %>
+    <%= link_to page.title, page.full_path %>
+  <% end %>
+<% end %>
+
 <div class="span2">
 </div>
+
 <div class="span8">
   <article class="page">
   <h1><%= @page.title %></h1>
@@ -12,12 +19,4 @@
     <% end %>
   </div>
 </article>
-</div>
-
-<div class="span4 secondary">
-  <div>
-    <% @page.children.each do |page| %>
-      <%= link_to page.title, page.full_path %>
-    <% end %>
-  </div>
 </div>
