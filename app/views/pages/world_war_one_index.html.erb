@@ -13,7 +13,7 @@
   </article>
 
   <div class="">
-    <% @page.children.group_by{ |page| page.published_at.year }.each do |year, pages| %>
+    <% @page.children.published.group_by{ |page| page.published_at.year }.each do |year, pages| %>
       <div class="span2">
         <h2><%= year - 100 %></h2>
         <ul>
