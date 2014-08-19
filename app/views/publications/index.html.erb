@@ -1,7 +1,14 @@
+<div class="row">
+  <div class="span2">&nbsp;</div>
+  <div class="span8">
+    <h1><%= page_title "Ewhurst History Society Publications" %></h1>
+  </div>
+</div>
+
 <% @publications.each do |publication| %>
+
   <div class="row">
-    <div class="span2">
-    </div>
+    <div class="span2">&nbsp;</div>
 
     <div class="span3 publication_cover">
       <%= image_tag publication.cover.url %>
