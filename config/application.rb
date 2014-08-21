@@ -15,6 +15,8 @@ module EwhurstHistory
       #r301      %r{/wiki/(\w+)_\w+},    '/$1'
       r301 "/default.asp", "/"
       r301 "/v2/default.asp", "/"
+
+      r301 "/about/ewhurstbriefhistory.php", "/about-ewhurst/a-brief-history-of-ewhurst"
     end
     #
     # Settings in config/environments/* take precedence over those specified here.
