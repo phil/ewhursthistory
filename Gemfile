@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rack-rewrite'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 
