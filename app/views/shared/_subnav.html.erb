@@ -1,5 +1,10 @@
+
 <% if content_for? :subnav %>
-<div class="subnav">
-  <%= yield :subnav %>
-</div>
+  <div class="row">
+    <div class="twelve columns">
+      <nav class="secondary_nav">
+        <%= yield :subnav %>
+      </nav>
+    </div>
+  </div>
 <% end %>

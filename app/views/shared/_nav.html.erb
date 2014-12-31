@@ -1,10 +1,15 @@
-<nav>
-  <%= link_to "Home", root_url %>
-  <%= link_to "News", posts_url %>
-  <%= link_to "Programme", "/programme" %>
-  <%= link_to "Publications", publications_url %>
 
-  <% Page.top_level.published.each do |page| %>
-    <%= link_to page.label, page.full_path %>
-  <% end %>
-</nav>
+<div class="row">
+  <div class="twelve colums">
+    <nav class="primary_nav">
+      <%= link_to "Home", root_url %>
+      <%= link_to "News", posts_url %>
+      <%= link_to "Programme", "/programme" %>
+      <%= link_to "Publications", publications_url %>
+
+      <% Page.top_level.published.each do |page| %>
+        <%= link_to page.label, page.full_path %>
+      <% end %>
+    </nav>
+  </div>
+</div>

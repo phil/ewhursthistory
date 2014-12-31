@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  
-  <title><%= yield :page_title %> - Ewhurst History Society</title>
+  <head>
+    <meta charset="UTF-8">
 
-  <meta name="description" content="Ewhurst History Society">
-  <meta name="keywords" content="Ewhurst, history, society, Surrey, Cranleigh, Guildford, England, UK">
+    <title><%= yield :page_title %> - Ewhurst History Society</title>
 
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body class="controller_<%= controller.to_s %>">
-  <div class="container">
+    <meta name="description" content="Ewhurst History Society">
+    <meta name="keywords" content="Ewhurst, history, society, Surrey, Cranleigh, Guildford, England, UK">
 
-    <%= render "shared/header" %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <%= render "shared/nav" %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
 
-    <%= render "shared/subnav" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body class="controller_<%= controller.to_s %>">
+    <div class="container">
 
-    <div class="row">
+      <%= render "shared/header" %>
+
+      <%= render "shared/nav" %>
+
+      <%= render "shared/subnav" %>
+
+      <main>
       <%= yield %>
+      </main>
+
+      <%= render "shared/footer" %>
+
     </div>
-
-    <%= render "shared/footer" %>
-  </div>
-
-</body>
+  </body>
 </html>

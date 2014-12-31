@@ -1,8 +1,6 @@
-<div class="span12">
-  <h1><%= page_title "Welcome to Ewhurst History Society" %></h1>
-</div>
 
-<section class="span4">
+<div class="row">
+  <div class="four columns">
   <h2>Ewhurst History Society</h2>
   <p>Ewhurst History Society has a regular <%= link_to "programme", programme_url %> of lectures from September to May and meets on the 3rd Tuesday of the month at Ewhurst Baptist Church. We also have social events and outings (see <%= link_to "News and events", posts_url %>). We have produced a number of <%= link_to "publications", publications_url %> on local history and have organised several local history exhibitions.</p>
   <p>The Society holds a collection of archive material, including photographs and information on various aspects of local history. Where possible we are willing to help with enquiries relating to family and local history and we are always interested to hear from people who may be able to help with our research.</p>
@@ -10,11 +8,11 @@
   <h2>From our Archives</h2>
   <%= image_tag "archives/children_on_the_mount.jpg" %>
   <p>Children on the mount, for the coronation of George V, 1911</p>
-</section>
+  </div>
 
-<section class="span4">
+  <div class="four columns">
   <h2>First World War</h2>
-  <%= image_tag "world_war_one_logo.png", width: "100%" %>;
+  <%= image_tag "world_war_one_logo.png", width: "100%" %>
   <p>August 2014 marks the 100th anniversary of the outbreak of the First World War. I am researching what happened in Ewhurst and I am planning to report events chronologically in the form of monthly posts on this web site. As the story unfolds month by month we can appreciate the time scale of these momentous years and see the part played by local people in the war and how it affected everyday life in Ewhurst
     <p>Janet Balchin,</br />
       Chairman, Ewhurst History Society<br />
@@ -23,41 +21,42 @@
     <% if @current_first_world_war_page %>
       <p><%= link_to @current_first_world_war_page.title, @current_first_world_war_page.full_path %></p>
     <% end %>
-  </section>
+  </div>
 
-  <section class="span4">
-    <h2><%= link_to "Next meeting", programme_url %></h2>
-    <% if @next_meeting %>
-      <p class="date"><%= @next_meeting.published_at.to_s(:calendar) %></p>
-      <p><%= @next_meeting.title %></p>
-    <% else %>
-      <p>The next programme meeting has yet to be scheduled</p>
+  <div class="four columns">
+  <h2><%= link_to "Next meeting", programme_url %></h2>
+  <% if @next_meeting %>
+    <p class="date"><%= @next_meeting.published_at.to_s(:calendar) %></p>
+    <p><%= @next_meeting.title %></p>
+  <% else %>
+    <p>The next programme meeting has yet to be scheduled</p>
+  <% end %>
+
+  <% unless @next_events.empty? %>
+    <h2><%= link_to "Upcomming Events", programme_url %></h2>
+    <% @next_events.each do |next_event| %>
+      <p class="date"><%= next_event.published_at.to_s(:calendar) %></p>
+      <p><%= next_event.title %></p>
     <% end %>
+  <% end %>
 
-    <% unless @next_events.empty? %>
-      <h2><%= link_to "Upcomming Events", programme_url %></h2>
-      <% @next_events.each do |next_event| %>
-        <p class="date"><%= next_event.published_at.to_s(:calendar) %></p>
-        <p><%= next_event.title %></p>
-      <% end %>
-    <% end %>
-
-    <% if false %>
-      <h2><%= link_to "News & Events", posts_url %></h2>
-      <p>
-        <% @posts.each do |post| %>
-          <article class="post">
-            <h1><%= link_to post.title, post %></h1>
-            <%= post.body.html_safe.to_s[0..100] %>
-          </article>
-        <% end %>
-      <% end %>
-
-      <h2><%= link_to "Publications", publications_url %></h2>
-      <% @publications.each do |publication| %>
-        <article class="publication">
-          <p><%= link_to image_tag(publication.cover.url, alt: publication.title), publications_url(anchor: "post_#{publication.id}") %></p>
+  <% if false %>
+    <h2><%= link_to "News & Events", posts_url %></h2>
+    <p>
+      <% @posts.each do |post| %>
+        <article class="post">
+          <h1><%= link_to post.title, post %></h1>
+          <%= post.body.html_safe.to_s[0..100] %>
         </article>
       <% end %>
-    </section>
+    <% end %>
+
+    <h2><%= link_to "Publications", publications_url %></h2>
+    <% @publications.each do |publication| %>
+      <article class="publication">
+        <p><%= link_to image_tag(publication.cover.url, alt: publication.title), publications_url(anchor: "post_#{publication.id}") %></p>
+      </article>
+    <% end %>
+  </div>
+</div>
 

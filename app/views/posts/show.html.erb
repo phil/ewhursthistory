@@ -1,10 +1,13 @@
-<div class="span8">
-  <article class="post">
-    <h1><%= page_title @post.title %></h1>
-    <%= raw @post.body %>
-  </article>
-</div>
 
-<div class="span4">
-  <%= render "recent_posts", posts: recent_news_posts %>
+<div class="row">
+  <div class="eight columns">
+    <article class="post">
+      <h1><%= page_title @post.title %></h1>
+      <%= raw @post.body %>
+    </article>
+  </div>
+
+  <div class="four columns">
+    <%= render "recent_posts", posts: recent_news_posts %>
+  </div>
 </div>

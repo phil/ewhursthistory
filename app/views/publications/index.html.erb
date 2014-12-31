@@ -1,20 +1,18 @@
+
 <div class="row">
-  <div class="span2">&nbsp;</div>
-  <div class="span8">
+  <div class="ten columns offset-by-one">
     <h1><%= page_title "Ewhurst History Society Publications" %></h1>
   </div>
 </div>
 
 <% @publications.each do |publication| %>
-
   <div class="row">
-    <div class="span2">&nbsp;</div>
 
-    <div class="span3 publication_cover">
+    <div class="four columns offset-by-one publication_cover">
       <%= image_tag publication.cover.url %>
     </div>
 
-    <div id="publication_<%= publication.id %>" class="span6 publication">
+    <div id="publication_<%= publication.id %>" class="six columns publication">
       <h1><%= publication.title %></h1>
 
       <%= publication.description.html_safe %>

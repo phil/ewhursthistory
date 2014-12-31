@@ -1,5 +1,7 @@
-<div class="span2"></div>
-<div class="span8">
+
+
+<div class="row">
+<div class="eight columns offset-by-two">
   <h1><%= page_title "Programme" %></h1>
 
   <% unless @programme_posts.empty? %>
@@ -13,6 +15,7 @@
       </article>
     <% end %>
   <% else %>
-    <p>The current programme of events has ended, pleae check back for next years meetings and events.</p>
+    <p>The current programme of events has ended, please check back for next years meetings and events.</p>
   <% end %>
+</div>
 </div>

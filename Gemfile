@@ -21,7 +21,7 @@ gem 'coffee-rails', '~> 4.0.0' # Use CoffeeScript for .js.coffee assets and view
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 #gem 'therubyracer',  platforms: :ruby
 
-gem "twitter-bootstrap-rails"
+#gem "twitter-bootstrap-rails"
 #
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

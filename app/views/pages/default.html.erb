@@ -4,19 +4,18 @@
   <% end %>
 <% end %>
 
-<div class="span2">
-</div>
+<div class="row">
+  <div class="eight columns offset-by-two">
+    <article class="page">
+      <h1><%= page_title @page.title %></h1>
 
-<div class="span8">
-  <article class="page">
-  <h1><%= page_title @page.title %></h1>
+      <%= @page.body.html_safe %>
 
-  <%= @page.body.html_safe %>
-
-  <div class="images">
-    <% @page.images_not_in_page.each do |img| %>
-      <%= image_tag img.file.url %>
-    <% end %>
+      <div class="images">
+        <% @page.images_not_in_page.each do |img| %>
+          <%= image_tag img.file.url %>
+        <% end %>
+      </div>
+    </article>
   </div>
-</article>
 </div>

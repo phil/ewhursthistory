@@ -1,33 +1,35 @@
-<div class="span2"></div>
-<div class="span8">
 
-  <% if previous_sibling = @page.previous_sibling %>
-    <% if previous_sibling.published? %>
-      <div>
-        <p><%= link_to "« #{previous_sibling.title}", previous_sibling.full_path %></p>
-      </div>
-    <% end %>
-  <% end %>
+<div class="row">
+  <div class="eight columns offset-by-two">
 
-  <article class="page">
-    <h1><%= page_title @page.title %></h1>
-
-    <%= @page.body.html_safe %>
-
-    <div class="images">
-      <% @page.images_not_in_page.each do |img| %>
-        <%= image_tag img.file.url %>
+    <% if previous_sibling = @page.previous_sibling %>
+      <% if previous_sibling.published? %>
+        <div>
+          <p><%= link_to "« #{previous_sibling.title}", previous_sibling.full_path %></p>
+        </div>
       <% end %>
-    </div>
-  </article>
-
-  <% if next_sibling = @page.next_sibling %>
-    <% if next_sibling.published? %>
-      <div>
-        <p><%= link_to next_sibling.title, next_sibling.full_path %></p>
-      </div>
     <% end %>
-  <% end %>
+
+    <article class="page">
+      <h1><%= page_title @page.title %></h1>
+
+      <%= @page.body.html_safe %>
+
+      <div class="images">
+        <% @page.images_not_in_page.each do |img| %>
+          <%= image_tag img.file.url %>
+        <% end %>
+      </div>
+    </article>
+
+    <% if next_sibling = @page.next_sibling %>
+      <% if next_sibling.published? %>
+        <div>
+          <p><%= link_to next_sibling.title, next_sibling.full_path %></p>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
 </div>
 
 <div class="span4 secondary">
