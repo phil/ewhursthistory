@@ -4,15 +4,30 @@ ActiveAdmin.register Page do
 
   index do
     Page.top_level.each do |page|
-      h2 link_to(page.title, resource_path(page))
+      h2 link_to(page.title, resource_path(page)), style: "margin-top: 2em"
+      #text_node content_tag :p, link_to("New #{content_tag :em, page.title} page".html_safe, new_resource_path)
 
-      ul do
-        page.children.each do |child_page|
-          li link_to(child_page.title, resource_path(child_page))
+      unless page.children.empty?
+        table do
+          thead do
+            tr do
+              th "#{content_tag :em, page.title} sub pages".html_safe
+              th "Published"
+              th "Page Template"
+            end
+          end
+
+          page.children.each do |child_page|
+            tr do
+              td link_to(child_page.title, resource_path(child_page))
+              td child_page.published_at, style: "width: 20%"
+              td child_page.template, style: "width: 20%"
+            end
+          end
         end
       end
-
     end
+
   end
 
   show do
