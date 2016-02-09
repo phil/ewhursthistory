@@ -1,5 +1,5 @@
 <% content_for :subnav do %>
-  <% @page.children.each do |page| %>
+  <% (@page&.parent || @page).children.each do |page| %>
     <%= link_to page.title, page.full_path %>
   <% end %>
 <% end %>

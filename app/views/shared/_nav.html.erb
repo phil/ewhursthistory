@@ -2,13 +2,13 @@
 <div class="row">
   <div class="twelve colums">
     <nav class="primary_nav">
-      <%= link_to "Home", root_url %>
-      <%= link_to "News", posts_url %>
-      <%= link_to "Programme", "/programme" %>
-      <%= link_to "Publications", publications_url %>
+      <%= link_to "Home", root_path, class: ("current" if controller.is_a? BaseController) %>
+      <%= link_to "News", posts_path, class: ("current" if controller.is_a? PostsController) if Post.news.any? %>
+      <%= link_to "Programme", "/programme", class: ("current" if controller.action_name == "programme") %>
+      <%= link_to "Publications", publications_path, class: ("current" if controller.is_a? PublicationsController) %>
 
       <% Page.top_level.published.each do |page| %>
-        <%= link_to page.label, page.full_path %>
+        <%= link_to page.label, page.full_path, class: ("current" if controller.is_a?(PagesController) && (page.label.in? [@page.label, @page&.parent&.label])) %>
       <% end %>
     </nav>
   </div>

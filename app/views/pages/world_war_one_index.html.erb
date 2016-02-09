@@ -15,7 +15,7 @@
     </article>
 
     <div class="row">
-      <% @page.children.published.group_by{ |page| page.published_at.year }.each do |year, pages| %>
+      <% @page.children.published.group_by{ |page| page.published_at.year }.sort.to_h.each do |year, pages| %>
         <div class="three columns">
           <h2><%= year - 100 %></h2>
           <ul>

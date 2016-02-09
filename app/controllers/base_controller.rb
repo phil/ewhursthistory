@@ -8,4 +8,10 @@ class BaseController < ApplicationController
     @next_events = Post.next_events
   end
 
+  private
+
+  def nav_class
+    
+  end
+
 end

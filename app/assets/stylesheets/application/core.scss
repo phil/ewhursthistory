@@ -12,12 +12,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
   font-size: 1.6em
 }
 
 h2 {
-  margin-bottom: 0;
+  margin-bottom: 0.3rem;
   font-size: 1.4em;
 }
 
@@ -41,22 +41,27 @@ a {
 img { margin: 0 auto; max-width: 100% }
 
 nav {
-  border-top: $keyline;
-  border-bottom: $keyline;
+  // border-top: $keyline;
+  // border-bottom: $keyline;
 
   text-align: center;
 
   a {
-    margin: 0;
-    padding: 0 0.8em;
+    margin: -3px;
+    padding: 0 1.5em;
     display: inline-block;
     line-height: 3em;
     border-radius: 0px;
+    border-bottom: 3px double #000;
 
     &:link, &:visited {
       text-decoration: none;
     }
     &:hover {
+    }
+
+    &.current {
+      border-bottom-style: solid;
     }
   }
 
@@ -64,6 +69,10 @@ nav {
   }
   &.secondary_nav {
     border-top: 0px;
+    a {
+      margin: 0px;
+      border: none;
+    }
   }
 }
 
@@ -88,12 +97,18 @@ nav {
 
 .container {
   > header {
-    padding: 2rem;
+    padding: 3rem 2rem 1rem 2rem;
     text-align: center;
+
+    h1 {
+      margin: 0;
+    }
   }
+
   > main {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
+
   > footer {
     clear: both;
     display: block;
