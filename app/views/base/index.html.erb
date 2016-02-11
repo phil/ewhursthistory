@@ -33,7 +33,7 @@
   <% end %>
 
   <% unless @next_events.empty? %>
-    <h2><%= link_to "Upcomming Events", programme_url %></h2>
+    <h2><%= link_to "Upcoming Events", programme_url %></h2>
     <% @next_events.each do |next_event| %>
       <p class="date"><%= next_event.published_at.to_s(:calendar) %></p>
       <p><%= next_event.title %></p>
