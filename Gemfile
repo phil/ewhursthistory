@@ -59,5 +59,4 @@ gem "exception_notification"
 
 group :test, :development do
   gem "rspec-rails"
-  gem "steak"
 end
