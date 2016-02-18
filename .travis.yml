@@ -1,0 +1,13 @@
+language: ruby
+cache: bundler
+
+branches:
+  only:
+    - master
+    - staging
+
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - bin/setup
+
+script: RAILS_ENV=test bin/rspec
