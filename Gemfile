@@ -9,7 +9,8 @@ gem 'rails'
 
 gem "pg"
 
-gem "unicorn"
+# gem "unicorn"
+gem "puma"
 
 gem 'rails_12factor', group: :production
 gem 'newrelic_rpm', group: :production
@@ -58,5 +59,6 @@ gem "exception_notification"
 #
 
 group :test, :development do
-  gem "rspec-rails"
+  gem 'rspec-rails'
+  gem 'capybara'
 end
