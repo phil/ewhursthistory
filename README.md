@@ -4,4 +4,4 @@
 
 ##Deployment / Production
 
-Pushing to master will automatically deploy to heroko
+Pushing to master will automatically deploy to heroku if CI passes
