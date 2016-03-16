@@ -1,0 +1,5 @@
+test:
+  adapter: postgresql
+  database: ewhursthistory_test
+  username: postgres
+  encoding: utf-8
