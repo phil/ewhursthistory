@@ -12,7 +12,7 @@ class Post < ActiveRecord::Base
   scope :meetings, -> { future.where(post_type: "Meeting").order("published_at ASC") }
   scope :events, -> { future.where(post_type: "Event").order("published_at ASC") }
 
-  scope :programme, -> { future.where(post_type: ["Meeting", "Event"]).order("published_at ASC") }
+  scope :programme, -> { where("date_trunc('DAY', published_at) >= date_trunc('DAY', now() - '1 DAY'::interval)").where(post_type: ["Meeting", "Event"]).order("published_at ASC") }
 
   def self.next_meeting
     self.meetings.first
