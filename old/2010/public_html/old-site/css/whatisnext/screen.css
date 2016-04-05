@@ -1,0 +1,912 @@
+/*
+	Frank Lloyd Wright Edition
+
+    Main Blue: 005577
+    Shadow Blue: 004466
+*/
+
+html, body
+{
+	margin: 0px;
+	padding: 0px;
+	font: normal normal lighter 85%/1.5em Arial, Helvetica, sans-serif;
+	background: #f5f5f5 none repeat-y scroll top center;
+}
+
+h1
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	color: #555;
+	font: normal normal lighter 2em/3em "Lucida Sans", "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+h1 a, h1 a:link, h1 a:visited
+{
+	text-decoration: none;
+}
+h1 a:hover
+{
+	text-decoration: none;
+}
+
+h2 {
+	color: #333;
+	font: normal normal bold 1em/2.5em Arial, Helvetica, sans-serif;
+	margin: 1em 0 0 0;
+}
+h2 a, h2 a:link
+{
+	color: #000;
+	text-decoration: none;
+}
+h2 a:hover
+{
+    text-decoration: none;
+}
+
+h3 {
+	border: none;
+	color: #333;
+	font: normal normal lighter 1.2em/2.5em Arial, Helvetica, sans-serif;
+	margin: 1em 0 0.5em 0;
+	padding: 0;
+}
+
+h4
+{
+	margin: 0px;
+	padding: 0px;
+	font: normal normal bold 1em/1.5em Arial, Helvetica, sans-serif;
+}
+
+p
+{
+	margin: 0em 0px 1em 0px;
+	padding: 0em;
+	color: #555;
+
+	font-weight: lighter;
+}
+
+em
+{
+	font-style: italic;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+address
+{
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	
+	color: #666;
+	
+	font-style: normal;
+}
+
+ul
+{
+	margin: 0px 0px 1em 0px;
+	padding: 0px;
+	list-style: none outside url(bulletblue.gif);
+}
+ul li
+{
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+	
+	position: relative;
+}
+
+a, a:link
+{
+	padding: 0px 0em;
+	color: #05b;
+	background-color: transparent;
+	text-decoration: underline;	
+}
+a:visited
+{
+	padding: 0px 0em;
+	color: #046;
+	background-color: transparent;
+	text-decoration: underline;
+}
+a:hover
+{
+	padding: 0em 0em;
+	color: #fff;
+	background-color: #58b;
+	text-decoration: none;
+}
+a:active
+{
+	padding: 0em 0em;
+	color: #fff;
+	background-color: #f33;
+	text-decoration: none;
+}
+
+.more-information
+{
+    margin: 0px;
+    padding: 0px 1em;
+    
+    clear: both;
+    
+    color: #aaa;
+    
+    background: transparent none no-repeat scroll top;
+    border-top: 1px solid #ddd;
+    
+    font-size: 0.8em;
+    line-height: 3em;
+    text-align: right;
+}
+.more-information a, .more-information a:link
+{
+    margin: 0.5em 0em;
+    line-height: 2em;
+}
+.more-information a:visited
+{
+}
+.more-information a:hover
+{
+}
+
+
+/*	Footer styles
+------------------------------------- */
+
+.section-wrapper
+{
+	margin: 0px;
+	padding: 0px;
+	
+	background-color: #fff;
+}
+.section
+{
+    margin: 0px auto;
+	padding: 0px;
+	
+	width: 72em;
+}
+
+.section-end
+{
+    clear: both
+}
+
+
+/*	Footer styles
+------------------------------------- */
+
+#footer-wrapper
+{
+	padding: 65px 20px 15px 20px;
+	clear: both;
+	background: transparent url(launcher-background-bottom.gif) repeat-x scroll top;
+}
+
+#footer
+{
+	padding: 15px 20px;
+}
+#copyright
+{
+	margin: 0px;
+	padding: 0px;
+
+	display: inline;
+	
+	font: normal normal normal 0.8em/1em Arial, Helvetica, sans-serif;
+	color: #999;
+}
+#validators
+{
+	margin: 0px 10px 0 0;
+	padding: 0px;
+
+	display: inline;
+	
+	font: normal normal normal 0.8em/1em Arial, Helvetica, sans-serif;
+	color: #999;
+}
+#hosting-provider
+{
+    margin: 0px;
+	padding: 0px 0px 0px 16px;
+	
+	display: inline;
+	
+	background: transparent url(/img/brinkster.gif) no-repeat scroll center left;
+	font: normal normal normal 0.8em/1em Arial, Helvetica, sans-serif;
+}
+
+#footer a:link, #footer a:visited
+{
+	padding: 0px 3px;
+	color: #444;
+	background-color: transparent;
+	text-decoration: none;
+}
+#footer a:hover
+{
+	color: #000;
+	background-color: #ccc;
+	text-decoration: none;
+}
+
+
+/*	Navigation Styles
+------------------------------------- */
+
+#navigation-wrapper
+{
+	padding: 0px 0px 50px 0px;
+	background: transparent url(launcher-background-top.gif) repeat-x scroll bottom;
+}
+
+#navigation {
+	height: 4em;
+}
+
+#navigation a:link, #navigation a:visited {
+	color: #666;
+	background: transparent none no-repeat scroll bottom;
+	font: normal normal bold 0.9em/3em Arial, Helvetica, sans-serif;
+	padding: 0.2em 15px 0.8em 15px;
+	text-decoration: none;
+	border: none;
+}
+
+#navigation a:hover {
+	text-decoration: none;
+	color: #000;
+	background: transparent url(menuover.gif) no-repeat scroll bottom;
+	border: none;
+}
+
+#navigation dl {
+	margin: 0px;
+	padding: 0px;
+	
+	position: relative;
+	left: -15px;
+	
+	background: none;
+	list-style: none;
+	
+	width: auto;
+	border: none;
+}
+
+#navigation dl dt {
+	background: none;
+	display: inline;
+	float: left;
+	height: 4em;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#navigation dl dd
+{
+	display: none;
+}
+
+#body-home .nav-body a,#body-create .nav-create a, #body-work .nav-work a, #body-projects .nav-projects a, #body-about .nav-about a
+{
+	background: transparent url(menuselect.gif) no-repeat scroll bottom !important;
+}
+
+
+#brand-info a, #brand-info a:link, #brand-info a:visited, #brand-info a:hover, #brand-info a:active
+{
+	border: none;
+	background-color: transparent;
+	text-decoration: none;
+}
+#brand-logo
+{
+	margin: 25px 0px 10px 0px;
+	border: none;
+}
+#brand-info p
+{
+	display: none;
+}
+
+
+/*	Skip to Content
+------------------------------------- */
+
+#skip-to-content
+{
+	margin: 0px;
+	padding: 5px;
+	
+	background-color: #333;
+	border-bottom: 3px solid #999;
+}
+
+#skip-to-content a, #skip-to-content a:link, #skip-to-content a:visited
+{
+    margin: 0px auto;
+    padding: 0px;
+    
+	display: block;
+	width: 72em;
+	
+	color: #ccc;
+	background-color: transparent;
+	
+	font: normal normal lighter 1em/1em Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+#skip-to-content a:hover
+{
+	color: #fff;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+#skip-to-content a span
+{
+    font-size: 0.6em;
+}
+
+/*	Launcher
+------------------------------------- */
+
+#launcher-wrapper
+{
+    margin: 0px;
+    padding: 0px;
+    
+    background: transparent url(launcher-background-bottom.gif) repeat-x scroll top;
+}
+
+#launcher
+{
+    
+}
+
+#launcher-home, #launcher-work, #launcher-projects, #launcher-journal
+{
+    margin: 0px 2em 0px 0px;
+    padding: 50px 0px 0px 0px;
+    
+    position: relative;
+    float: left;
+    display: inline;
+    width: 16em;
+}
+
+#launcher-journal
+{
+	margin: 0px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
+	width: 18em;
+}
+
+.launcher-link
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.launcher-item ul
+{
+	margin: 0px;
+	padding: 0px;
+	
+	list-style: none;
+	background: none;
+}
+
+.launcher-item ul li
+{
+	margin: 0px;
+	padding: 0px;
+	
+	list-style:  none;
+	
+	border-top: 1px solid #ddd;
+	
+	line-height: 1.5em;
+}
+
+.launcher-item ul li a, .launcher-item ul li a:link
+{
+	margin: 0px;
+	padding: 5px;
+	
+	display: block;
+	
+	text-decoration: none;
+}
+.launcher-item ul li a:visited
+{
+}
+.launcher-item ul li a:hover
+{
+}
+
+
+/* Content Styles
+------------------------------------- */
+
+#content-wrapper
+{
+    background-color: #fff;
+}
+
+#content
+{
+    
+}
+
+.content-end
+{
+	clear: both;
+}
+
+.content-license
+{
+	margin: 0;
+	padding: 0;
+	
+	clear: both;
+}
+
+
+
+/*	Desktops
+------------------------------------- */
+
+
+#desktops-wrapper
+{
+}
+
+#desktops-wrapper h2
+{
+	clear: both;
+}
+
+#desktops
+{
+}
+
+.desktop-list
+{
+	margin: 0em;
+	padding: 0em;
+	list-style: none
+}
+.desktop
+{
+	margin: 20px 0px 0px 20px;
+	padding: 0px;
+
+	position: relative;
+	width: 22em;
+	float: left;
+	display: inline;
+	
+	background: transparent none no-repeat scroll top;
+
+	list-style: none;
+}
+
+.desktop h3
+{
+	margin: 0px 10px;
+	padding: 0;
+
+	color: #333;
+	font: normal normal lighter 1em/3em Arial, Helvetica, sans-serif;
+
+	border: none;
+}
+
+.desktop img
+{
+	margin: 0px 0px 10px 10px;
+	padding: 0px;
+
+	float: left;
+	display: inline;
+}
+
+.new-desktop
+{
+	margin: 0 !important;
+	padding: 0 !important;
+
+	position: absolute !important;
+	top: 3em !important;
+	left: 10px !important;
+}
+
+
+.desktop-info
+{	
+	margin: 0px 10px 10px 145px;
+	padding: 0px;
+
+	list-style: none;
+	border-bottom: 1px solid #ddd;
+}
+
+.desktop-resolution
+{
+	margin: 0px;
+	padding: 0px;
+
+	list-style: none;
+	
+	border-top: 1px solid #ddd;
+}
+.desktop-resolution a, .desktop-resolution a:link
+{
+	margin: 0;
+	padding: 0px 10px;
+
+	display: block;
+
+	font-size: 0.8em;
+	text-decoration: none;
+	line-height: 2em;
+}
+.desktop-resolution a:hover
+{
+	
+}
+
+
+
+/* About+Contact Styles
+----------------------------------------------- */
+
+#about-whatisnext
+{
+	margin: 0;
+	padding: 0;
+	
+	float: right;
+	display: inline;
+	position: relative;
+	left: -26em;
+	
+	width: 46em;
+}
+
+#contact-whatisnext
+{
+	margin: 0;
+	padding: 0;
+	
+	float: left;
+	display: inline;
+	position: relative;
+	left: 48em;
+	
+	width: 24em;
+}
+
+/* Journal Styles
+----------------------------------------------- */
+#journal-wrapper
+{
+}
+
+#latest-entry
+{
+	margin: 0;
+	padding: 0;
+	
+	position: relative;
+	
+	width: 46em;
+}
+
+#journal-categories-list
+{
+	margin: 0 0 0 0;
+	padding: 0;
+	
+	
+	display: inline;
+	float: left;
+	position: relative;
+	left: 48em;
+	
+	width: 24em;
+}
+
+#recent-entries
+{
+	margin: 0 0 0 0;
+	padding: 0;
+	
+	display:inline;
+	float: right;
+	position: relative;
+	left: -26em;
+	
+	width: 46em;
+}
+
+
+#recent-entries ul, #journal-categories-list ul
+{
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+#recent-entries li
+{
+    margin: 0;
+    padding: 0;
+    background: none !important;
+    list-style: none !important;
+    
+    border-top: 1px solid #ddd;
+}
+#journal-categories-list li
+{
+	margin: 0px;
+	padding: 0px;
+	
+	width: 12em;
+	float: left;
+	
+	background: none !important;
+	list-style: none !important;
+
+	border-top: 1px solid #ddd;
+}
+
+#recent-entries li a, #recent-entries li a:link, #journal-categories-list li a, #journal-categories-list li a:link
+{
+	margin: 0;
+ 	padding: 0px 10px;
+
+ 	display: block;
+	position: relative;
+
+	background-color: transparent;
+
+	line-height: 2em;
+	text-decoration: none;
+}
+#recent-entries li a:visited, #journal-categories-list li a:visited
+{
+	text-decoration: none;
+}
+#recent-entries li a:hover, #journal-categories-list li a:hover
+{
+	background-color: #f5f5f5;
+	text-decoration: none;
+}
+
+.journal-archive-entry-link .entry-date, .journal-category-count
+{
+	margin: 0 10px 0 0;
+	
+	color: #999;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	text-decoration: none;
+}
+
+.journal-archive-entry-link .entry-title, .journal-category-title
+{
+	
+}
+
+.journal-archive-entry-link .entry-comment-count
+{
+	margin: 0 10px 0 0;
+
+	position: absolute;
+	right: 0px;
+	
+	color: #999;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	text-decoration: none;
+}
+
+.journal-archive-entry-link:hover .entry-title,  .journal-category-title
+{
+	color: #444;
+	text-decoration: none;
+}
+
+
+.journal-archive-entry-link:hover .entry-date, .journal-archive-entry-link:hover .entry-comment-count, .journal-category-count
+{
+	color: #888;
+	text-decoration: none;
+}
+
+
+#journal-externals-wrapper
+{
+	margin: 4em 0px 0px 0px;
+	padding: 0px;
+	background-color: #f5f5f5;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	
+}
+
+#journal-externals
+{
+}
+
+#external-flickr, #external-links, #external-recomended
+{
+	margin: 0 2em 0 0;
+	padding: 0;
+	
+	float: left;
+	display: inline;
+	
+	width: 22em;
+}
+
+.flickr_badge_image
+{
+	margin: 10px 10px 0px 0px;
+	padding: 0px;
+	
+	float: left;
+	display: inline;
+}
+.flickr_badge_image a, .flickr_badge_image a:link
+{
+    margin: 0px;
+    padding: 3px;
+    
+    display: block;
+    
+    background-color: transparent;
+    border: 1px solid #ddd;
+}
+.flickr_badge_image a:hover
+{
+    background-color: #fff;
+    border-color: #bbb;
+}
+
+.flickr_badge_image a img
+{
+    margin: 0px;
+    padding: 0px;
+    
+    width: 32px;
+    height: 32px;
+    
+    border: none;
+}
+
+#external-links ul, #external-recomended ul
+{
+    margin: 0;
+    padding: 0 0 0 0;
+    
+    list-style: none;
+    
+    border-bottom: 1px solid #ddd;
+}
+
+#external-links li, #external-recomended li
+{
+    margin: 0;
+    padding: 0;
+    background: none;
+    list-style: none;
+    
+    border-top: 1px solid #ddd;
+}
+
+#external-links ul
+{
+	border-bottom: none;
+}
+
+#external-links li a, #external-links li a:link, #external-links li a:visited, #external-links li a:hover
+{
+	background-color: transparent;
+	
+}
+
+#external-links li a .entry-title, #external-links li a:link .entry-title
+{
+	margin: 0px;
+	padding: 4px 10px;
+	
+	display: block;
+	
+	text-decoration: none;
+	line-height: 1.5em;
+}
+#external-links li a:visited .entry-title
+{
+	color: #046;
+	text-decoration: none;
+}
+#external-links li a:hover .entry-title
+{
+	text-decoration: underline;
+}
+
+#external-links li a .journal-laf-archive-entry-extended, #external-links li a:link .journal-laf-archive-entry-extended
+{
+	margin: 0px;
+	padding: 4px 10px;
+	
+	display: block;
+	
+	color: #05b;
+	
+	text-decoration: none;
+	line-height: 1.5em;
+}
+#external-links li a:visited .journal-laf-archive-entry-extended
+{
+	color: #444;
+	text-decoration: none;
+}
+#external-links li a:hover .journal-laf-archive-entry-extended
+{
+	color: #ccc;
+	text-decoration: none;
+}
+
+
+#external-recomended li a, #external-recomended li a:link
+{
+	margin: 0px;
+	padding: 0px 10px;
+	
+	display: block;
+	
+	text-decoration: none;
+	line-height: 2em;
+}
+#external-recomended li a:visited
+{
+	text-decoration: none;
+}
+#external-recomended li a:hover
+{
+	background-color: #fff;
+	color: #444;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+

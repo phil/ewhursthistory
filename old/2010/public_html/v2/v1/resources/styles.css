@@ -1,0 +1,18 @@
+body {
+	background-attachment: scroll;
+	background-image: url(back.jpg);
+	margin: 15px 0px 15px 0px;
+	background-repeat: repeat;
+}
+
+a:link { color: 0000cc; text-decoration: underline }
+a:visited { color: 000066; text-decoration: underline }
+a:hover { color: #0000ff; text-decoration: none }
+
+
+p, td { font-family: Times New Roman, Times, Serif; font-size: 14px; color: #000000 }
+
+.PageTitle { font-family: Times New Roman, Times, Serif; font-size: 28px; font-variant: small-caps; }
+.pageSubTitle { font-family: times New Roman, Times, Serif; font-size: 24px; }
+
+.menuLink {  }

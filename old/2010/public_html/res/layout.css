@@ -1,0 +1,68 @@
+html, body
+{
+	font: normal normal normal 85%/normal Arial, Helvetica, sans-serif;
+	background: White url(background.jpg) repeat scroll top;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	border: 0px none Silver;
+	width: 100%;
+}
+
+#Page
+{
+	text-align: left;
+	width: 650px;
+	border: 1px solid #333333;
+}
+
+#PageHeader
+{
+	clear: both;
+	width: 650px;
+	height: 50px;
+	background-color: #cc3399;
+}
+
+#SiteNavigation
+{
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+	width: 650px;
+}
+
+#PageNavigation
+{
+	width: 195px;
+	float: right;
+}
+
+#PageContent
+{
+	width: 450px;
+}
+
+#ContentTop
+{
+	background-color: #cccccc;
+	padding: 10px 20px 10px 20px;
+}
+
+#ContentMiddle
+{
+	background-color: #ffffff;
+	padding: 10px 20px 10px 20px;
+}
+
+#ContentBottom
+{
+	background-color: #cccccc;
+	padding: 10px 20px 10px 20px;
+}
+
+#PageFooter
+{
+	clear: both;
+	width: 650px;
+}

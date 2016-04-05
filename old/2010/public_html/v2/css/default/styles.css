@@ -1,0 +1,427 @@
+html, body
+{
+	font: normal normal normal 86%/normal Arial, Helvetica, sans-serif;
+	background: url(background.jpg) repeat scroll top;
+	margin: 0px;
+	padding: 0px;
+	border: 0px none Silver;
+	width: 100%;
+}
+
+#Page
+{
+	margin: 0px auto 0px auto;
+	background: url(pagebackground.jpg) repeat-y scroll top;
+	width: 750px;
+	border: 0px solid #333333;
+}
+
+#PageHeader
+{
+	background-image: url(header_main.jpg);
+	margin: 0 25px;
+	width: 700px;
+	height: 200px;
+	clear: both;
+}
+
+#RelatedDocuments
+{
+	margin: 0px 300px 50px 75px;
+	padding: 30px 10px 10px 25px;
+	clear: left;
+	list-style: none;
+	border: 1px dotted #cccccc;
+	background: #eeeeee url(relatedpages.gif) no-repeat scroll top left;
+}
+
+#RelatedDocuments li
+{
+	margin: 0px 0px 0.8em 0px;
+}
+
+#SiteExplorer, #SocietyStatement
+{
+	margin: 50px 0px 0px 0px;
+	padding: 0px;
+	width: 250px;
+	float: right;
+}
+#Welcome
+{
+	display: inline;
+	float: left;
+	margin: 1em auto 1em 50px;
+	padding: 0px;
+	width: 425px;
+}
+#Welcome h1
+{
+	
+}
+
+
+#SocietyStatement p
+{
+	margin: 0px 50px 15px 25px;
+}
+
+#SiteExplorer dl, #SiteExplorer ul
+{
+	margin: 00px 50px 15px 25px;
+	padding: 0px;
+	list-style: none;
+}
+#SiteExplorer dt
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-family: "Baskerville Old Face", "Times New Roman", Times, serif;
+	font-size: 1.3em;
+	color: #666666;
+	border-bottom: 1px solid #666666;
+}
+#SiteExplorer dd, #SiteExplorer li
+{
+	margin: 0px;
+	padding: 5px 0px 5px 0px;
+	line-height: 20px;
+}
+
+#SiteExplorer hr
+{
+	/*display: none;*/
+	visibility: hidden;
+}
+
+#SiteExplorer a, #SiteExplorer a:link, #SiteExplorer a:visited
+{
+	display: block;
+	color: #336699;
+	text-decoration: none;
+	border: 1px solid #eeeeee;
+	background-color: #eeeeee;
+	padding: 0px 20px 0px 20px;
+}
+#SiteExplorer a:hover
+{
+	color: #0066FF;
+	text-decoration: none;
+	border: 1px solid #ffffff;
+	background-color: #dddddd;
+}
+
+#SiteExplorer.Launcher
+{
+	display: inline;
+	float: left;
+	margin: 0px 0px 50px 25px;
+	width: 475px;
+	/*border: 1px solid blue;*/
+}
+
+#SiteExplorer.Launcher #HomeNav
+{
+	display: none;
+}
+
+#SiteExplorer.Launcher dl
+{
+	/*border: 1px solid red;*/
+	display: inline;
+	float: left;
+	clear: none;
+	width: auto;
+	margin: 0px;
+	
+}
+#SiteExplorer.Launcher dd, #SiteExplorer.Launcher dt
+{
+	margin: 0px 0px 0px 25px;
+	width: 200px;
+}
+
+#SiteExplorer.Launcher hr.hr1, #SiteExplorer.Launcher hr.hr3
+{
+	display: none;
+	clear: none;
+}
+#SiteExplorer.Launcher hr.hr2, #SiteExplorer.Launcher hr.hr4
+{
+	visibility: hidden;
+	clear: both;
+}
+
+
+#SiteExplorer.Launcher a, #SiteExplorer.Launcher a:link, #SiteExplorer.Launcher a:visited
+{
+	display: block;
+	color: #336699;
+	text-decoration: none;
+	border: 1px solid #ffffff;
+	background-color: #ffffff;
+	padding: 0px 20px 0px 20px;
+}
+#SiteExplorer.Launcher a:hover
+{
+	color: #0066FF;
+	text-decoration: none;
+	border: 1px solid #cccccc;
+	background-color: #eeeeee;
+}
+
+
+
+#PageContent
+{
+	margin: 0px 0px 25px 0px;
+	padding: 0px;
+	float: left;
+	width: 500px;
+}
+
+#ContentHeader
+{
+	margin: 0px auto 0px 75px;
+	width: 375px;
+}
+
+#ContentBody
+{
+	margin: 0px auto 0px 75px;
+	width: 375px;
+}
+
+#specialevent
+{
+	margin: 0px auto 50px 75px;
+	width: 375px;
+}
+
+#ContentFooter
+{
+	margin: 0px auto 0px 75px;
+	width: 375px;
+}
+
+#PageFooter
+{
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	background: url(pagefooter.jpg) no-repeat scroll bottom;
+	width: 750px;
+	height: 220px;
+	
+	font-size: 0.8em;
+	vertical-align: bottom;
+}
+#PageFooterLogo
+{
+	margin: 0px 15px 0px 50px;
+	float: left;
+	display: inline;
+}
+#PageFooter p
+{
+	padding: 46px 0px 0px 0px;
+}
+
+h1
+{
+	margin: 1em 0px 1em 0px;
+	padding: 0px 0px 0px 0px;
+	font: normal normal normal 3em/normal  "Baskerville Old Face", "Times New Roman", Times, serif;
+	text-align: center;
+}
+
+h2
+{
+	margin: 1.5em 0em 0.5em 0em;
+	border-bottom: 1px solid #999999;
+	font: normal normal normal 1.5em/normal "Baskerville Old Face", "Times New Roman", Times, serif;
+}
+h2 a:hover
+{
+	text-decoration: none;
+	border: none;
+}
+
+h3
+{
+	border-bottom: 1px solid #cccccc;
+	font: normal normal normal 1.2em/normal "Baskerville Old Face", "Times New Roman", Times, serif;
+}
+
+h4
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+h5
+{
+	
+}
+
+h6
+{
+	
+}
+
+p
+{
+	margin: 0.5em 0em 1em 0em;
+	font-size: 1em;
+	color: #666666;
+	line-height: 1.8em;
+}
+
+a
+{
+	text-decoration: none;
+}
+a:link
+{
+	color: #0066CC;
+	border-bottom: 1px solid #0066cc;
+}
+a:visited
+{
+	color: #003366;
+	border-bottom: 1px none #666666;
+}
+a:hover
+{
+	color: #CC0000;
+	border-bottom: 1px solid #0033FF;
+}
+
+dl
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+dt
+{
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+dd
+{
+	margin: 0px;
+	padding: 5px 10px;
+}
+
+ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+li
+{
+	margin: 0px 0px 2em 0px;
+	padding: 0px;
+}
+
+li p 
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+blockquote p
+{
+	/* Special Styles */
+}
+
+blockquote
+{
+	font-style: italic;
+	margin: 0em 2em 0em 2em;
+	padding: 0em 3em 0em 3em;
+	border: 0px none #cccccc;
+}
+
+hr
+{
+	width: 100px;
+}
+
+hr.ClearBoth
+{
+	width: 100px;
+	clear: both;
+	visibility: hidden;
+}
+
+.ImageFrame
+{
+	text-align: center;
+}
+.ImageFrame p
+{
+	font-size: 0.8em;
+	color: #000000;
+	text-align: center;
+}
+
+img.ImageStd
+{
+	margin: 0px auto 0px auto;
+	padding: 2px;
+	border: 1px solid #cccccc;
+}
+
+.Date
+{
+	font-size: 0.8em;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+
+/* Shop Buying
+---------------------------------------- */
+
+.ShopOrdering
+{
+	margin: 0px 0px 75px 0px;	
+	padding: 20px 0px;
+
+	position: relative;
+	
+	background-color: #ffd;
+}
+
+.ShopOrdering h3
+{
+	margin: 0px 10px 1em 10px;
+}
+
+.ShopOrdering p
+{
+	margin: 0px 10px 1em 10px;
+}
+
+.ShopOrdering ul
+{
+	margin: 0px 10px 0px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

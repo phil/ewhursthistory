@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+   <channel>
+      <title>whatisnext.co.uk</title>
+      <link>http://www.whatisnext.co.uk/journal/</link>
+      <description>Me and my life</description>
+      <language>en</language>
+      <copyright>Copyright 2006</copyright>
+      <lastBuildDate>Sun, 06 Aug 2006 22:56:30 +0000</lastBuildDate>
+      <generator>http://www.sixapart.com/movabletype/?v=3.2</generator>
+      <docs>http://blogs.law.harvard.edu/tech/rss</docs> 
+
+            <item>
+         <title>Leopard</title>
+         <description><![CDATA[<p>A wish List</p>]]></description>
+         <link>http://www.whatisnext.co.uk/journal/2006/08/leopard.php</link>
+         <guid>http://www.whatisnext.co.uk/journal/2006/08/leopard.php</guid>
+         <category>Apple</category>
+         <pubDate>Sun, 06 Aug 2006 22:56:30 +0000</pubDate>
+      </item>
+            <item>
+         <title>Is it Wrong?</title>
+         <description><![CDATA[<p>Is it wrong that grown men should want to dress up in womans frocks and play a Stoolball game every year?</p>
+
+<p>I&#8217;ll let you decide, but these <a href="http://www.flickr.com/photos/whatisnext/tags/stoolball/">photos</a> might offend the light hearted amongst you</p>]]></description>
+         <link>http://www.whatisnext.co.uk/journal/2006/08/is_it_wrong.php</link>
+         <guid>http://www.whatisnext.co.uk/journal/2006/08/is_it_wrong.php</guid>
+         <category></category>
+         <pubDate>Tue, 01 Aug 2006 13:01:28 +0000</pubDate>
+      </item>
+            <item>
+         <title>Microsoft .Net Frameworks</title>
+         <description><![CDATA[<blockquote>The .NET Framework 3.0 adds new technologies to the .NET Framework 3.0, which makes the .NET Framework 3.0 a superset of the .NET Framework 2.0</blockquote>
+
+<p>surely there&#8217;s an easier way to say this! How about, <em>&#8220;The .Net Framework 3.0 is the next version of .Net Framework&#8221;</em></p>]]></description>
+         <link>http://www.whatisnext.co.uk/journal/2006/06/microsoft_net_frameworks.php</link>
+         <guid>http://www.whatisnext.co.uk/journal/2006/06/microsoft_net_frameworks.php</guid>
+         <category>Code</category>
+         <pubDate>Fri, 30 Jun 2006 09:00:44 +0000</pubDate>
+      </item>
+            <item>
+         <title>May 4th</title>
+         <description><![CDATA[<p>In tribute to Starwars, Hapy May 4th be with you Day!!</p>]]></description>
+         <link>http://www.whatisnext.co.uk/journal/2006/05/may_4th.php</link>
+         <guid>http://www.whatisnext.co.uk/journal/2006/05/may_4th.php</guid>
+         <category>General</category>
+         <pubDate>Thu, 04 May 2006 12:02:51 +0000</pubDate>
+      </item>
+            <item>
+         <title>Styling the Flickr Badge</title>
+         <description><![CDATA[<p>As I&#8217;m going around trying to smarten this place up, I ran into a problem with the Flickr Badge. <em>First,</em> It has a maximum of ten image thumbs. <em>Second,</em> even the small thumbnails are pretty big. Time to get out the coding equivilent of an axe.</p>]]></description>
+         <link>http://www.whatisnext.co.uk/journal/2006/04/styling_the_flickr_badge.php</link>
+         <guid>http://www.whatisnext.co.uk/journal/2006/04/styling_the_flickr_badge.php</guid>
+         <category>(X)HTML</category>
+         <pubDate>Fri, 28 Apr 2006 00:05:09 +0000</pubDate>
+      </item>
+            <item>
+         <title>Please excuse the mess</title>
+         <description><![CDATA[<p>Between full-time work, part-time freelance, eating and sleeping, I haven&#8217;t had enough time to do any spring cleaing around here. So, updates to the styles and content is patchy at best, and downright crap for the rest of the time. What makes it even harder, is using way too many machines to try and do the changes. Which means that i&#8217;m currently coding this site in whatever tools i can get my hands on, including: notepad, textwrangler, dreamweaver, Skedit, Visual Studio 2005. Put simlpy, whatever is installed, or whatever is a free download! By the way, my favourite of editor is the brilliant <a href="http://www.skti.org/skEdit.php">Skedit</a>, go check it out now.</p>]]></description>
+         <link>http://www.whatisnext.co.uk/journal/2006/04/please_excuse_the_mess.php</link>
+         <guid>http://www.whatisnext.co.uk/journal/2006/04/please_excuse_the_mess.php</guid>
+         <category>whatisnext.co.uk</category>
+         <pubDate>Thu, 27 Apr 2006 23:56:03 +0000</pubDate>
+      </item>
+            <item>
+         <title><![CDATA[&amp;nbsp;]]></title>
+         <description><![CDATA[<p>There was once a time when I could type this character combination without having to think too much about what order the &#8216;n&#8217;, &#8216;b&#8217;, &#8216;s&#8217; and &#8216;p&#8217; went. For those of you who don&#8217;t know this entity very well, it&#8217;s the non-breaking-space entity. It used to be the most overly used of all the entities, it was the web designers best friend. So why doesn&#8217;t anyone use them anymore?</p>]]></description>
+         <link>http://www.whatisnext.co.uk/journal/2006/04/nbsp_1.php</link>
+         <guid>http://www.whatisnext.co.uk/journal/2006/04/nbsp_1.php</guid>
+         <category>(X)HTML</category>
+         <pubDate>Tue, 18 Apr 2006 22:21:58 +0000</pubDate>
+      </item>
+            <item>
+         <title>New Desktops</title>
+         <description><![CDATA[<p>Check out the new <a href="/projects/desktops/">Desktops</a>, free to download and do with as you please! I'll be adding more every month <em>(hopefully!)</em>, so keep coming back. Subscribe to the journal <a href="http://www.whatisnext.co.uk/journal/syndicate/rss.xml">RSS</a>/<a href="http://www.whatisnext.co.uk/journal/syndicate/atom.xml">Atom</a> feeds for easy updates.</p>]]></description>
+         <link>http://www.whatisnext.co.uk/journal/2006/04/new_desktops.php</link>
+         <guid>http://www.whatisnext.co.uk/journal/2006/04/new_desktops.php</guid>
+         <category>whatisnext.co.uk</category>
+         <pubDate>Thu, 13 Apr 2006 13:32:57 +0000</pubDate>
+      </item>
+            <item>
+         <title>What happend to the Blue?</title>
+         <description><![CDATA[<p>Put simply, i got a bit boarded of it. It was all getting too dark around here and as you might have noticed (or not), I've been doing some pretty big changes, all in full view of the masses. Which explains the green and red boxes <em>(for CSS problem solving)</em> all over the place, and why half the site doesn't work!</p>]]></description>
+         <link>http://www.whatisnext.co.uk/journal/2006/04/what_happend_to_the_blue.php</link>
+         <guid>http://www.whatisnext.co.uk/journal/2006/04/what_happend_to_the_blue.php</guid>
+         <category>whatisnext.co.uk</category>
+         <pubDate>Thu, 13 Apr 2006 09:38:24 +0000</pubDate>
+      </item>
+            <item>
+         <title>What Would Macgyver Do?</title>
+         <description><![CDATA[<p>If he was going to start a new <strike>web blog</strike> Journal, Well, he would probably construct some kind of clever machine that would be totally independant of human thought and be made out of matchsticks and <em>double</em> sided tape. </p>
+
+<p>Well, i'm not Macgyver, so i'll just do what everyone else does and have a couple of webpages with all the navigation down the right hand side, and talk about topics like web design, typography, 42, and some other useless things that will clog up all your news readers.</p>
+
+<p>Abit about me, I'm a struggling part-time designer, and after doing some pretty nice projects (i'll upload them soon) i needed somewhere to showcase them and explain what is was thinking at the time.</p>]]></description>
+         <link>http://www.whatisnext.co.uk/journal/2006/02/what_would_macgyver_do_1.php</link>
+         <guid>http://www.whatisnext.co.uk/journal/2006/02/what_would_macgyver_do_1.php</guid>
+         <category>General</category>
+         <pubDate>Mon, 27 Feb 2006 13:39:01 +0000</pubDate>
+      </item>
+      
+   </channel>
+</rss>

@@ -1,0 +1,341 @@
+/*
+-----------------------------------------------
+Photo Gallery Templates: Main Style Sheet
+Author:   Douglas Bowman
+Version:  1.0.4 - 19 Oct 2005
+The design and Movable Type templates that 
+build these pages are available for anyone to 
+download and use:
+http://stopdesign.com/templates/photos/
+
+image will be W680 x H510 (landscape)
+----------------------------------------------- */
+
+html, body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #722 url(../img/bodybackground.jpg) repeat-x scroll top;
+	text-align: center;
+	font: normal normal normal 85%/1.5em Arial, Helvetica, sans-serif;
+}
+
+#content
+{
+	margin: 100px auto 0px;
+	padding: 0px;
+	width: 900px;
+	text-align: left;
+	background: #fff url(../img/contentbackground.jpg) no-repeat scroll top;
+	position: relative;
+}
+body.photosolo div#content
+{
+	width: 900px;
+}
+body.photosolo div#content.v
+{
+	width: 900px;
+}
+
+ul
+{
+	list-style: none inside url(../img/bullit.gif);
+}
+
+ul li
+{
+	margin: 5px 0px;
+	padding: 0px 0px 0px 15px;
+}
+
+/* Path --------------------------------------------- */
+#path
+{
+	margin: 0px;
+	padding: 0px;
+	
+	width: 100%;
+	text-align: center;
+	
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	
+	color: #722;
+}
+
+#path a, #path a:link, #path a:visited
+{
+	margin: 0px;
+	padding: 3px;
+	color: #666;
+	text-decoration: none;
+}
+#path a:hover
+{
+	color: #666;
+	background-color: #fff;
+}
+
+/* Photos ----------------------------------------------- */
+.slides {
+  /*float:right;*/
+  width:75%;
+  margin:0 auto 15px;
+  padding:0;
+  list-style:none;
+  font-size:85%;
+  line-height:1.4em;
+  }
+.slides li, .slides p, p.slides, .useslides ul li {
+  background:url(../img/bg_slide.gif) 0 0 no-repeat;
+  }
+.slides li, .slides p, p.slides {
+  /*display:block;
+  float:left;*/
+  width:123px;
+  margin:0 10px 10px 0;
+  padding:0;
+  }
+.slides>li, .slides>p, dd>p.slides, .useslides>ul li {
+  background-image:url(../img/bg_slide.png);
+  }
+.slides a, .slides a:visited, .slides a:hover, .useslides a.img, .useslides a.img:visited, .useslides a.img:hover {
+  background-repeat:no-repeat;
+  background-position:50% 103px;
+  display:block;
+  width:92px;
+  height:70px;
+  padding:25px 17px 28px 14px;
+  border-width:0;
+  text-align:center;
+  }
+.slides a, .slides a:visited, .slides a:hover {
+  float:left;
+  }
+.slides a.v, .slides a.v:visited, .slides a.v:hover, .useslides a.v, .useslides a.v:visited, .useslides a.v:hover {
+  background-position:10px 50%;
+  width:70px;
+  height:92px;
+  padding:14px 28px 17px 25px;
+  }
+.slides img, .useslides .img img {
+  display:block;
+  border:1px solid;
+  border-color:#aaa #ddd #ddd #aaa;
+  }
+  
+
+/* Gallery --------------------------------------------- */
+.galleryinfo
+{
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+	display: block;
+}
+
+h1
+{
+	margin: 0px;
+	padding: 40px 0px 10px 0px;
+	color: #722;
+	text-align: center;
+	font-size: 2em;
+	line-height: 1em;
+	font-weight: lighter;
+	letter-spacing: 0.1em;
+}
+
+h2
+{
+	margin: 0px;
+	padding: 0px;
+	
+	text-align: center;
+	font-size: 1.4em;
+	line-height: 1.8em;
+	font-weight: lighter;
+	letter-spacing: 0em;
+	
+	position: relative;
+}
+h2 a, h2 a:link, h2 a:visited
+{
+	margin: 40px auto;
+	width: 50px;
+	display: block;
+	
+	border: none;
+}
+h2 a img
+{
+	border: none;
+}
+
+#desc p, p.desc
+{
+	margin: 10px auto 20px;
+	color: #666;
+	text-align: center;
+}
+
+/* Photo --------------------------------------------- */
+
+#photo
+{
+	text-align: center;
+}
+#photo img
+{
+	margin: 0px;
+	padding: 2px;
+	
+	border: 1px solid #ccc;
+}
+
+/* Previous / Next -------------------------------------- */
+#prev
+{
+	position: absolute;
+	top: 535px;
+	left: 150px;
+	width: 300px;
+	
+	text-align: right;
+}
+
+#next
+{
+	position: absolute;
+	top: 535px;
+	left: 450px;
+	width: 300px;
+}
+/*body.photosolo div#content.v #next
+{
+	position: absolute;
+	top: 200px;
+	left: 570px;
+}*/
+
+/* Comments --------------------------------------------- */
+
+.commentlist
+{
+	margin: 0px auto;
+	padding: 0px;
+	
+	width: 400px;
+}
+
+.commentlist dt
+{
+	margin: 20px 0px 0px 0px;
+	color: #222;
+	
+	line-height: 1.2em;
+}
+
+.commentlist dd
+{
+	margin: 0px 0em 0px;
+	padding: 10px 20px 20px;
+	
+	border-bottom: 1px solid #ccc;
+	
+	color: #555;
+	line-height: 1.2em;
+}
+
+.commentlist dt em
+{
+	font-style: normal;
+}
+
+
+.mainbutton
+{
+	margin: 0px;
+	padding: 0px;
+	
+	text-align: center;
+	border: none;
+}
+.mainbutton a
+{
+	border: none;
+}
+.mainbutton a img
+{
+	border: 0px;
+}
+
+/* Gallery Form Control ---------------------*/
+
+.galleryinfo form
+{
+	margin: 0px auto;
+	padding: 0px;
+	
+	width: 75%;
+	
+	background-color: #eee;
+	
+}
+
+.galleryinfo form fieldset
+{
+	margin:0px;
+	padding: 0px;
+	
+	width: 49%;
+	display: inline;
+	
+	float: left;
+}
+.galleryinfo form p
+{
+	clear: both;
+}
+
+/* Footer -----------------------------------*/
+#footer
+{
+	margin: 40px auto;
+	padding: 0px;
+	
+	width: 500px;
+	
+	clear: both;
+	
+	border-top: 1px solid #999;
+}
+#footer hr
+{
+	display: none;
+	visibility: hidden;
+}
+#footer p
+{
+	margin: 0px;
+	padding: 0px;
+	
+	color: #ccc;
+	line-height: 1.8em;
+	
+}
+#footer p a, #footer p a:link, #footer p a:visited
+{
+	padding: 2px;
+	color: #ccc;
+	background-color: #822;
+	
+	text-decoration: underline;
+}
+#footer p a:hover
+{
+	color: #722;
+	background-color: #ccc;
+}

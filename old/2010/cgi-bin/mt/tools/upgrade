@@ -1,0 +1,41 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+use Getopt::Long;
+use Carp qw(confess);
+GetOptions("dryrun", \my($dryrun));
+
+use lib 'extlib';
+use lib 'lib';
+
+use MT;
+use MT::Upgrade;
+
+my $mt = new MT(Config => 'mt.cfg');
+
+print "upgrade -- A commandline tool for upgrading the schema for Movable Type.\n";
+print "(Non-destructive mode)\n" if $dryrun;
+
+my $install;
+my $driver = MT::Object->driver;
+if (!$driver || !$driver->table_exists('MT::Author')) {
+    $install = 1;
+}
+
+my $updated = MT::Upgrade->do_upgrade(App => 'main', DryRun => $dryrun,
+                                      Install => $install);
+
+print "Upgrade complete!\n" if !$dryrun && $updated;
+print "Your schema is up to date already.\n" if defined $updated && !$updated;
+
+sub progress {
+    my $pkg = shift;
+    my $msg = shift;
+    print "\t* " . $msg . "\n";
+}
+sub error {
+    my $pkg = shift;
+    my $err = shift;
+    confess $err;
+}

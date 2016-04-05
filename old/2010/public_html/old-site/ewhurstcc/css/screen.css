@@ -1,0 +1,833 @@
+/* 
+
+	author: phil balchin
+	client: ewhurst cricket club
+	(c)2005 next century systems
+
+main html tags --------------------------- */
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	
+	font: normal normal normal 80%/1.5em arial, helvetica, sans-serif;
+	background: #882828 url(/ecc/img/body-background.jpg) repeat-x scroll top center;
+	
+}
+
+h1
+{
+	margin: 0px;
+	padding: 0px;
+	color: #666;
+	text-align: center;
+	font: normal normal normal 2/1em arial, helvetica, sans-serif;
+	font-weight: lighter;
+	
+}
+
+h2
+{
+	margin: 0.5em 0px 1em 0px;
+	padding: 0px;
+	
+	color: #666;
+	
+	font-size: 0.8em;
+	font-weight: lighter;
+	
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3
+{
+	margin: 0.5em 0px 0.5em 0px;
+	padding: 0px;
+	
+	color: #882828;
+	font-size: 1em;
+	font-weight: normal;
+	
+	text-align: left;
+}
+
+h4
+{
+}
+
+p
+{
+	margin: 0em 4m 1em 4em;
+	padding: 0px;
+	
+	color: #444;
+}
+
+a, a:link
+{
+	margin: 0px;
+	padding: 0px;
+
+	color: #882828;
+	
+	background-color: transparent;
+	border: none;
+
+	text-decoration: underline;
+}
+a:visited
+{
+	color: #882222;
+	background-color: transparent;
+}
+a:hover
+{
+	color: #882828;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:active
+{
+	background-color: #900;
+	color: #fff;
+}
+
+/* list styles ------------------------------- */
+
+ul
+{
+	list-style: none inside url(../img/bullit.gif);
+}
+
+ul li
+{
+	margin: 5px 0px;
+	padding: 0px 0px 0px 15px;
+}
+
+/* tools ------------------------------- */
+
+hr.clearall
+{
+	clear: both;
+}
+
+/* document styles ------------------------------- */
+
+#wrapper
+{
+	margin: 0px auto;
+	padding: 0px;
+	width: 760px;
+	background: none;
+	text-align:left;
+	position: relative;
+}
+#wrapper.relative
+{
+}
+#wrapper.fluid
+{
+}
+
+#masthead
+{
+	margin: 0px;
+	padding: 0px;
+	
+	width: 760px;
+	height: 100px;
+	background: transparent url(/ecc/img/masthead-logo.jpg) no-repeat scroll top center;
+}
+#masthead img
+{
+	display: none;
+}
+
+#document-wrapper
+{
+	margin: 0px 0px 0px 0px;
+	background: #fff url(/ecc/img/page-left.jpg) repeat-y scroll top left;
+	
+	position: relative;
+}
+
+#document
+{
+	background: transparent url(/ecc/img/page-right.jpg) repeat-y scroll top right;
+}
+
+#document-content
+{
+	margin: 0px;
+	padding: 60px 60px 0px 60px;
+	background: transparent url(/ecc/img/page-top.jpg) no-repeat scroll top center;
+}
+#body-home #document-content
+{
+	margin: 0px;
+	padding: 380px 0px 0px 0px;
+	background: transparent url(/ecc/img/page-top.jpg) no-repeat scroll top center;
+}
+
+#document-footer
+{
+	margin: 0px 0px 50px 0px;
+	padding: 0px;
+	width: 100%;
+	height: 80px;
+	clear: both;
+	background: transparent url(/ecc/img/page-bottom.jpg) no-repeat scroll bottom center;
+}
+#document-footer p
+{
+	margin: 10px 60px 0px 60px;
+	padding: 10px 0px 0px 0px;
+	
+	color: #999;
+	font-size: 0.8em;
+	line-height: 1.5em;
+	
+	border-top: 1px solid #ccc;
+}
+
+#footer p a, #footer p a:link, #footer p a:visited
+{
+	color: #999;
+	text-decoration: underline;
+	background: none;
+}
+#footer p a:hover
+{
+	color: #fff;
+	background-color: #999;
+	text-decoration: none;
+}
+
+/* documentcontent styles --------------------=---------------- */
+
+#welcome-introduction
+{
+	margin: 0px 60px 20px;
+	padding: 10px 50px;
+	
+	background: #eee url(/ecc/img/body-background.jpg) repeat-x scroll top center;
+	
+	color: #333;
+}
+
+
+
+/* eccexplorer : navigation ----------------------------------- */
+
+#navigation
+{
+	margin:  0px;
+	padding: 0px;
+	
+	width: auto;
+	height: 50px;
+	
+	text-align: center;
+}
+
+#navigation ul
+{
+	margin: 0px auto;
+	padding: 0px;
+	
+	background: none;
+	list-style: none;
+	
+	width: 760px;
+	height: 50px;
+	text-align: left;
+}
+
+#navigation ul li
+{
+	margin: 0px 20px 0px 0px;
+	padding: 0px;
+	
+	list-style: none;
+	display: inline;
+	
+	width: 100px;
+	height: 50px;
+	float: left;
+}
+#navigation ul li#ecchome
+{
+	margin-left: 90px;
+}
+
+#navigation ul li a, #navigation ul li a:link, #navigation ul li a:visited
+{
+	margin: 0px;
+	padding: 0px;
+	
+	width: 100px;
+	height: 40px;
+	
+	display: block;
+	
+	background: none;
+	text-align: center;
+}
+#navigation ul li a:hover
+{
+}
+#navigation ul li a:active
+{
+}
+
+
+li#nav-home a
+{
+	background-image: url(/ecc/img/nav-home.gif) !important;
+}
+li#nav-home a:hover
+{
+	background-image: url(/ecc/img/nav-home-over.gif) !important;
+}
+
+li#nav-about a
+{
+	background-image: url(/ecc/img/nav-about.gif) !important;
+}
+li#nav-about a:hover
+{
+	background-image: url(/ecc/img/nav-about-over.gif) !important;
+}
+
+li#nav-fixtures a
+{
+	background-image: url(/ecc/img/nav-fixtures.gif) !important;
+}
+li#nav-fixtures a:hover
+{
+	background-image: url(/ecc/img/nav-fixtures-over.gif) !important;
+}
+
+li#nav-photos a
+{
+	background-image: url(/ecc/img/nav-photos.gif) !important;
+}
+li#nav-photos a:hover
+{
+	background-image: url(/ecc/img/nav-photos-over.gif) !important;
+}
+
+li#nav-contact a
+{
+	background-image: url(/ecc/img/nav-contact.gif) !important;
+}
+li#nav-contact a:hover
+{
+	background-image: url(/ecc/img/nav-contact-over.gif) !important;
+}
+
+#body-home #nav-home, #body-about #nav-about, #body-fixtures #nav-fixtures, #body-photos #nav-photos, #body-contact #nav-contact
+{
+	background-image: url(/ecc/img/nav-select.gif);
+	background-attachment: scroll;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+#navigation ul li a span
+{
+	display: none;
+}
+
+/* ecc feature ------------------------------------ */
+
+#eccfeature
+{
+	margin: 0px;
+	padding: 0px;
+	display: block;
+
+	position: absolute;
+	top: 57px;
+	left: 57px;
+	
+	width: 644px;
+	height: 304px;
+	
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+#eccfeature a
+{
+	margin: 0px;
+	padding: 0px;
+	
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+
+	width: 640px;
+	height: 300px;
+	
+	text-decoration: none;
+	background: none;
+	border: none;
+}
+#eccfeature a.white:hover
+{
+	background: transparent url(/ecc/features/over-white.gif) no-repeat scroll center center;
+}
+#eccfeature a.black:hover
+{
+	background: transparent url(/ecc/features/over-black.gif) no-repeat scroll center center;
+}
+#eccfeature img
+{
+	margin: 2px;
+	padding: 0px;
+}
+
+
+/* site updates ---------------------------------------- */
+
+#siteupdates
+{
+	margin: 0px auto 20px;
+	padding: 0px;
+
+	position: relative;
+
+	width: 660px;
+	height: 120px;
+	
+	background: transparent url(/ecc/img/hr-siteupdates.gif) no-repeat scroll top center;	
+}
+#siteupdates ul
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+
+	position: relative;
+	top: 20px;
+	
+	list-style: none;
+
+	height: 100px;
+
+	background: transparent url(/ecc/img/hr-eccupdates.gif) no-repeat scroll bottom center;
+}
+#siteupdates ul li
+{
+	margin: 0px 9px 0px 9px;
+	padding: 0px;
+
+	display: inline;
+	float: left;
+
+	width: 200px;
+	height: 80px;
+	border: 1px solid green;
+}
+#siteupdates ul li a, #siteupdates ul li a:link, #siteupdates ul li a:visited
+{
+	margin: 2px;
+	padding: 0px;
+
+	display: block;
+	width: 196px;
+	height: 76px;
+	
+	background-color: blue;
+}
+#siteupdates ul li a:hover
+{
+	background-color: purple;
+}
+
+/* ui extras ------------------------------------------- */
+
+#championbanner
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 144px;
+	height: 144px;
+	background: transparent url(/ecc/img/champ-banner.gif) no-repeat scroll top right;
+}
+#championbanner p
+{
+	display: none;
+}
+
+/* modules / sidebar things -------------------------- */
+
+.module
+{
+	margin: 0px 0px 30px 0px;
+	padding: 0px;
+	
+	width: 230px;
+	
+	position: relative;
+	left: 470px;
+}
+
+.modulelist
+{
+}
+
+.modulelistitem
+{
+}
+
+
+/* blog styles --------------------------------------- */
+
+.entry
+{
+	margin: 0px 0px 50px 0px;
+	padding: 0px;
+	
+	display: inline;
+	position: relative;
+	left: -310px;
+	
+	float: right;
+	clear: right;
+	
+	width: 390px;
+}
+
+.entrynav
+{
+	margin: 0px;
+	padding: 0px;
+
+	text-align: center;
+
+	position: relative;
+	top: -25px;
+}
+.entrynav a, .entrynav a:link, .entrynav a:visited
+{
+	background-color: transparent;
+	color: #999;
+	font: normal normal normal 0.8em/1em arial, helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.entrynav a:hover
+{
+	color: #fff;
+	background-color: #999;
+	text-decoration: none;
+}
+
+#comments
+{
+	margin: 25px 0px 0px 0px;
+}
+
+#postedcomments
+{
+	margin: 0px 0px;
+	padding: 0px;
+	position: relative;
+	left: -60px;
+	width: 760px;
+	list-style: none inside none;
+}
+
+#postedcomments li
+{
+	margin: 10px auto;
+	padding: 0px;
+	width: 450px;
+	
+	border-bottom: 1px solid #eee;
+}
+#postedcomments li p
+{
+	margin: 5px 25px;
+	padding: 0px;
+}
+
+.commentinfo
+{
+	color: #999;
+}
+
+#commentsform
+{
+	margin: 25 0px 0px 0px;
+	padding: 0px;
+	
+	border: 1px solid #ddd;
+	background-color: #f7f7f7;
+}
+
+#commentsform h2
+{
+	margin-top: 20px;
+	color: #333;
+}
+
+.commentsmoderated
+{
+	margin: 10px 30px 20px 30px;
+	padding: 0px;
+	
+	color: #999;
+	font-size: 0.8em;
+	line-height: 1.2em;
+}
+
+#commentername, #commenteremail, #commenterurl, #commentercookie
+{
+	margin: 0px 30px 12px 0px;
+	padding: 0px;
+	
+	display: inline;
+	float: right;
+	clear: both;
+	width: 275px;
+	
+	position: relative;
+	left: -305px;
+}
+
+#commentername label, #commenteremail label, #commenterurl label, #commentermessage label
+{
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	width: 275px;
+	
+	
+	color: #444;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+#commentername input, #commenteremail input, #commenterurl input, #commentermessage textarea
+{
+	margin: 0px;
+	padding: 2px;
+	display: block;
+	width: 269px;
+	vertical-align: middle;
+	
+	border: 1px solid #999;
+	background-color: #fff;
+	
+}
+
+#commentermessage
+{
+	margin: 0px 0px 0px 30px;
+	padding: 0px;
+	width: 275px;
+	position: relative;
+	left: 304px;
+}
+#commentermessage label
+{
+	width: 275px;
+}
+#commentermessage textarea
+{
+	margin: 0px !important;
+	padding: 0px;
+
+	position: absolute;
+	left: 0px;
+}
+
+#commentssubmit
+{
+	margin: 30px 0px 30px 0px;
+	padding: 0px;
+	clear: both;
+	
+	width: 305px;
+	
+	text-align: right;
+}
+#commentssubmit input
+{
+	margin: 0px 0px 0px 10px;
+}
+
+
+
+/*
+	gallery styles
+*/
+
+#gallerypath
+{
+	margin: 0px 0px 30px 0px;
+	padding: 3px;
+	
+	background-color: #f5f5f5;
+	border: 1px solid #eee;
+
+	color: #aaa;
+	
+	text-align: center;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+#gallerypath a, #gallerypath a:link, #gallerypath a:visited
+{
+	color: #999;
+	text-decoration: none;
+}
+#gallerypath a:hover
+{
+	color: #333;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+.gallerylist
+{
+	margin: 0px -22px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.gallerylist h3
+{
+	text-align: center;
+}
+
+.gallerylist p
+{
+	margin: 0px;
+	padding: 0px;
+	
+	color: #666;
+}
+
+.gallerylist ul
+{
+	margin: 0px;
+	padding: 0px;
+	
+	list-style: none;
+}
+
+.gallerylist ul li
+{
+	margin: 0px 20px 20px 0px;
+	padding: 0px;
+	
+	display: inline;
+	position: relative;
+	float: left;
+	
+	width: 200px;
+	border: 0px solid #fff;
+	
+	list-style: none;
+}
+
+.gallerylist ul li a; .gallerylist ul li a:link; .gallerylist ul li a:visited; .gallerylist ul li a:hover;  
+{
+	margin: 0px;
+	padding: 0px;
+	
+	border: 0px solid #fff;
+}
+
+.gallerylist ul li a img
+{
+	margin: 0px;
+	padding: 0px;
+	
+	width: 200px;
+	height: 75px;
+	
+	border: 0px solid #fff;
+}
+
+.contactsheet
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.contactsheet ul
+{
+	margin: 0px;
+	padding: 0px;
+	
+	list-style: none;
+}
+
+.contactsheet ul li
+{
+	margin: 0px 10px 20px 10px;
+	padding: 0px;
+	
+	display: inline;
+	float: left;
+	position: relative;
+	
+	width: 108px;
+}
+
+.slide
+{
+	margin: 0px;
+	padding: 0px;
+	
+	position: relative;
+	
+	width: 108px;
+	height: 108px;
+}
+
+.slide a, .slide a:link, .slide a:visited
+{
+	margin: 0px;
+	padding: 0px;
+	
+	display: block;
+	
+	width: 106px;
+	height: 106px;
+	
+	border: 1px solid #fff;
+}
+.slide a:hover
+{
+	border: 1px solid #882828;
+}
+
+.slide a img
+{
+	margin: 0px;
+	padding: 0px;
+	
+	
+	border-top: 1px solid #666;
+	border-left:1px solid #666;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.slide.vetical a img
+{
+	margin: 0px 0px 0px 20px;
+} 
+
+.slide.horizontal a img
+{
+	margin: 20px 0px 0px 0px;
+}

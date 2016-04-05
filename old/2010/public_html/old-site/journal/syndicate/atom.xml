@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>whatisnext.co.uk</title>
+    <link rel="alternate" type="text/html" href="http://www.whatisnext.co.uk/journal/" />
+    <link rel="self" type="application/atom+xml" href="http://www.whatisnext.co.uk/journal/atom.xml" />
+   <id>tag:www.whatisnext.co.uk,2006:/journal//1</id>
+    <link rel="service.post" type="application/atom+xml" href="http://www.whatisnext.co.uk/cgi-bin/mt/mt-atom.cgi/weblog/blog_id=1" title="whatisnext.co.uk" />
+    <updated>2006-08-06T23:15:45Z</updated>
+    <subtitle>Me and my life</subtitle>
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 3.2</generator>
+ 
+<entry>
+    <title>Leopard</title>
+    <link rel="alternate" type="text/html" href="http://www.whatisnext.co.uk/journal/2006/08/leopard.php" />
+    <link rel="service.edit" type="application/atom+xml" href="http://www.whatisnext.co.uk/cgi-bin/mt/mt-atom.cgi/weblog/blog_id=1/entry_id=593" title="Leopard" />
+    <id>tag:www.whatisnext.co.uk,2006:/journal//1.593</id>
+    
+    <published>2006-08-06T22:56:30Z</published>
+    <updated>2006-08-06T23:15:45Z</updated>
+    
+    <summary>A wish List...</summary>
+    <author>
+        <name>Phil</name>
+        <uri>http://www.whatisnext.co.uk</uri>
+    </author>
+            <category term="Apple" />
+    
+    <content type="html" xml:lang="en" xml:base="http://www.whatisnext.co.uk/journal/">
+        <![CDATA[<p>A wish List</p>]]>
+        <![CDATA[<h2>Spotlight</h2>
+
+<p>Firstly spotlight. Now really like spotlight, the promise of a completely OS-level disk search tool sounded great, it worked pretty good too, if you were happy to wait for it to finish searching your entire harddrive for &#8216;a&#8217;, then &#8216;ap&#8217;, then &#8216;app&#8217; etc. Hopefully Leopard will supercharge spotlight, then i might be able to ditch Quicksilver.</p>
+
+<h2>The Finder</h2>
+
+<p>Arrrr, ok, we all hate the finder, and have done for quite some time, we know this, Apple knows this. although Apple has yet to release details, we all know the finder is in for a make-over, but please Apple, whatever you do, don&#8217;t add bloody tabs to it. I really cannot think of a worst use of <span class="caps">UI, </span>than tabs for a file management tool. My reason, the most common operation the finder does is moving/copying files, which doesn&#8217;t lend itself to tabs. Instead, i would like to see improvements to the side-bar and context menus. But hey, who knows, we might get a 3D finder?</p>
+
+<h2>Safari</h2>
+
+<p>Safari gets the upgrade to Webkit v3, pretty much a given.</p>
+
+<h2>UI</h2>
+
+<p>As everyone else has commented, a more unified UI would be pretty nice, both in style and consistancy</p>]]>
+    </content>
+</entry>
+<entry>
+    <title>Is it Wrong?</title>
+    <link rel="alternate" type="text/html" href="http://www.whatisnext.co.uk/journal/2006/08/is_it_wrong.php" />
+    <link rel="service.edit" type="application/atom+xml" href="http://www.whatisnext.co.uk/cgi-bin/mt/mt-atom.cgi/weblog/blog_id=1/entry_id=589" title="Is it Wrong?" />
+    <id>tag:www.whatisnext.co.uk,2006:/journal//1.589</id>
+    
+    <published>2006-08-01T13:01:28Z</published>
+    <updated>2006-08-01T13:04:49Z</updated>
+    
+    <summary>Is it wrong that grown men should want to dress up in womans frocks and play a Stoolball game every year? I&amp;#8217;ll let you decide, but these photos might offend the light hearted amongst you...</summary>
+    <author>
+        <name>Phil</name>
+        <uri>http://www.whatisnext.co.uk</uri>
+    </author>
+    
+    <content type="html" xml:lang="en" xml:base="http://www.whatisnext.co.uk/journal/">
+        <![CDATA[<p>Is it wrong that grown men should want to dress up in womans frocks and play a Stoolball game every year?</p>
+
+<p>I&#8217;ll let you decide, but these <a href="http://www.flickr.com/photos/whatisnext/tags/stoolball/">photos</a> might offend the light hearted amongst you</p>]]>
+        
+    </content>
+</entry>
+<entry>
+    <title>Microsoft .Net Frameworks</title>
+    <link rel="alternate" type="text/html" href="http://www.whatisnext.co.uk/journal/2006/06/microsoft_net_frameworks.php" />
+    <link rel="service.edit" type="application/atom+xml" href="http://www.whatisnext.co.uk/cgi-bin/mt/mt-atom.cgi/weblog/blog_id=1/entry_id=588" title="Microsoft .Net Frameworks" />
+    <id>tag:www.whatisnext.co.uk,2006:/journal//1.588</id>
+    
+    <published>2006-06-30T09:00:44Z</published>
+    <updated>2006-06-30T09:08:51Z</updated>
+    
+    <summary>The .NET Framework 3.0 adds new technologies to the .NET Framework 3.0, which makes the .NET Framework 3.0 a superset of the .NET Framework 2.0 surely there&amp;#8217;s an easier way to say this! How about, &amp;#8220;The .Net Framework 3.0 is...</summary>
+    <author>
+        <name>Phil</name>
+        <uri>http://www.whatisnext.co.uk</uri>
+    </author>
+            <category term="Code" />
+    
+    <content type="html" xml:lang="en" xml:base="http://www.whatisnext.co.uk/journal/">
+        <![CDATA[<blockquote>The .NET Framework 3.0 adds new technologies to the .NET Framework 3.0, which makes the .NET Framework 3.0 a superset of the .NET Framework 2.0</blockquote>
+
+<p>surely there&#8217;s an easier way to say this! How about, <em>&#8220;The .Net Framework 3.0 is the next version of .Net Framework&#8221;</em></p>]]>
+        <![CDATA[<p>Don&#8217;t get me, wrong, I&#8217;m not against .net, far from it, its a great set of technologoies that gives webdevelopers (like myself) an insane amount power and control. For some crazy reason, Microsft have let their copywriters take pissh here, which is a shame, as most of the .net documentation is well written.</p>]]>
+    </content>
+</entry>
+<entry>
+    <title>May 4th</title>
+    <link rel="alternate" type="text/html" href="http://www.whatisnext.co.uk/journal/2006/05/may_4th.php" />
+    <link rel="service.edit" type="application/atom+xml" href="http://www.whatisnext.co.uk/cgi-bin/mt/mt-atom.cgi/weblog/blog_id=1/entry_id=566" title="May 4th" />
+    <id>tag:www.whatisnext.co.uk,2006:/journal//1.566</id>
+    
+    <published>2006-05-04T12:02:51Z</published>
+    <updated>2006-05-04T12:04:42Z</updated>
+    
+    <summary>In tribute to Starwars, Hapy May 4th be with you Day!!...</summary>
+    <author>
+        <name>Phil</name>
+        <uri>http://www.whatisnext.co.uk</uri>
+    </author>
+            <category term="General" />
+    
+    <content type="html" xml:lang="en" xml:base="http://www.whatisnext.co.uk/journal/">
+        <![CDATA[<p>In tribute to Starwars, Hapy May 4th be with you Day!!</p>]]>
+        
+    </content>
+</entry>
+<entry>
+    <title>Styling the Flickr Badge</title>
+    <link rel="alternate" type="text/html" href="http://www.whatisnext.co.uk/journal/2006/04/styling_the_flickr_badge.php" />
+    <link rel="service.edit" type="application/atom+xml" href="http://www.whatisnext.co.uk/cgi-bin/mt/mt-atom.cgi/weblog/blog_id=1/entry_id=560" title="Styling the Flickr Badge" />
+    <id>tag:www.whatisnext.co.uk,2006:/journal//1.560</id>
+    
+    <published>2006-04-28T00:05:09Z</published>
+    <updated>2006-04-28T00:51:29Z</updated>
+    
+    <summary>As I&amp;#8217;m going around trying to smarten this place up, I ran into a problem with the Flickr Badge. First, It has a maximum of ten image thumbs. Second, even the small thumbnails are pretty big. Time to get out...</summary>
+    <author>
+        <name>Phil</name>
+        <uri>http://www.whatisnext.co.uk</uri>
+    </author>
+            <category term="(X)HTML" />
+    
+    <content type="html" xml:lang="en" xml:base="http://www.whatisnext.co.uk/journal/">
+        <![CDATA[<p>As I&#8217;m going around trying to smarten this place up, I ran into a problem with the Flickr Badge. <em>First,</em> It has a maximum of ten image thumbs. <em>Second,</em> even the small thumbnails are pretty big. Time to get out the coding equivilent of an axe.</p>]]>
+        <![CDATA[<h2>First, the Limited number of images</h2>
+
+<p>When you do the wizard on Flickr to create a badge of your photos, it has a limited number of options to change the number of photos to display. Ok, this is easliy hacked by changing the code at the end, nut it max&#8217;s out at 10. Even if you type 30, it will only display 10. So, getting around this should be easy, simply paste the code more than once into your <span class="caps">HTML.</span> Nope! You&#8217;ll get the same ten photos twice, notsure if this is a bug or deliberate, but it&#8217;s not quite what we were looking for. Try making another badge that only gets its photos from one of your tags, or random, or set etc. </p>
+
+<h2>Making the Thumbs smaller</h2>
+
+<p>Next up, the default small thumbnail was too big to sit nicly into my design idea. To correct this, <strong>[CSS enters stage right]</strong> we&#8217;ll be using our friend <span class="caps">CSS.</span> Forcing a width and height onto <code>.flickr_badge_image a img</code> resizes the img. Obviously only resize an image smaller than the original, and try to keep the proportion correct. I&#8217;ve used 32&#215;32 pixels as its about half the size of 75&#215;75 pixels.</p>]]>
+    </content>
+</entry>
+<entry>
+    <title>Please excuse the mess</title>
+    <link rel="alternate" type="text/html" href="http://www.whatisnext.co.uk/journal/2006/04/please_excuse_the_mess.php" />
+    <link rel="service.edit" type="application/atom+xml" href="http://www.whatisnext.co.uk/cgi-bin/mt/mt-atom.cgi/weblog/blog_id=1/entry_id=559" title="Please excuse the mess" />
+    <id>tag:www.whatisnext.co.uk,2006:/journal//1.559</id>
+    
+    <published>2006-04-27T23:56:03Z</published>
+    <updated>2006-04-28T00:05:03Z</updated>
+    
+    <summary>Between full-time work, part-time freelance, eating and sleeping, I haven&amp;#8217;t had enough time to do any spring cleaing around here. So, updates to the styles and content is patchy at best, and downright crap for the rest of the time....</summary>
+    <author>
+        <name>Phil</name>
+        <uri>http://www.whatisnext.co.uk</uri>
+    </author>
+            <category term="whatisnext.co.uk" />
+    
+    <content type="html" xml:lang="en" xml:base="http://www.whatisnext.co.uk/journal/">
+        <![CDATA[<p>Between full-time work, part-time freelance, eating and sleeping, I haven&#8217;t had enough time to do any spring cleaing around here. So, updates to the styles and content is patchy at best, and downright crap for the rest of the time. What makes it even harder, is using way too many machines to try and do the changes. Which means that i&#8217;m currently coding this site in whatever tools i can get my hands on, including: notepad, textwrangler, dreamweaver, Skedit, Visual Studio 2005. Put simlpy, whatever is installed, or whatever is a free download! By the way, my favourite of editor is the brilliant <a href="http://www.skti.org/skEdit.php">Skedit</a>, go check it out now.</p>]]>
+        
+    </content>
+</entry>
+<entry>
+    <title><![CDATA[&amp;nbsp;]]></title>
+    <link rel="alternate" type="text/html" href="http://www.whatisnext.co.uk/journal/2006/04/nbsp_1.php" />
+    <link rel="service.edit" type="application/atom+xml" href="http://www.whatisnext.co.uk/cgi-bin/mt/mt-atom.cgi/weblog/blog_id=1/entry_id=557" title="&amp;amp;nbsp;" />
+    <id>tag:www.whatisnext.co.uk,2006:/journal//1.557</id>
+    
+    <published>2006-04-18T22:21:58Z</published>
+    <updated>2006-04-20T08:41:09Z</updated>
+    
+    <summary>There was once a time when I could type this character combination without having to think too much about what order the &amp;#8216;n&amp;#8217;, &amp;#8216;b&amp;#8217;, &amp;#8216;s&amp;#8217; and &amp;#8216;p&amp;#8217; went. For those of you who don&amp;#8217;t know this entity very well, it&amp;#8217;s...</summary>
+    <author>
+        <name>Phil</name>
+        <uri>http://www.whatisnext.co.uk</uri>
+    </author>
+            <category term="(X)HTML" />
+            <category term="Code" />
+    
+    <content type="html" xml:lang="en" xml:base="http://www.whatisnext.co.uk/journal/">
+        <![CDATA[<p>There was once a time when I could type this character combination without having to think too much about what order the &#8216;n&#8217;, &#8216;b&#8217;, &#8216;s&#8217; and &#8216;p&#8217; went. For those of you who don&#8217;t know this entity very well, it&#8217;s the non-breaking-space entity. It used to be the most overly used of all the entities, it was the web designers best friend. So why doesn&#8217;t anyone use them anymore?</p>]]>
+        <![CDATA[<p>The reason this entity gained fame and fortune has more to do with arcane voodoo, than good coding. It was used during the great <em>table dynasty [1995&mdash;2002]</em>, when the only way to layout a two coloum grid was to have a two column table. EYou see, everything was done with tables, say you wanted a margin seperating these two columns, easy, just add another column! it really was that simple. But, this middle column wouldn&#8217;t have any text in it, it soul purpuse was to make a bit of space between the content column and the sidebar column. Which in some browsers could cause unexpected results, so any web desinger worth their namesake would simlpy add <code>&amp;amp;nbsp;</code> entity to the column.</p>
+
+<p>Now thing have changed. The separation of structure and style has killed the need to the arcane zoodoo of table layout, and with it, the &nbsp; entity was left in the gutter <em>(litterally)</em>. The web has forgotton how useful this little entity can be.</p>
+
+<h2>What is this &nbsp; thing anyway?</h2>
+
+<p>Its full name is <strong>non-breaking space</strong>, its entity reference is <code>&amp;amp;nbsp;</code>, and its entity code is <code>&amp;amp;#160;</code>. As the name suggests, when rendered by a browser, it is a space, just like any other space. But, and here&#8217;s the clever bit, this space will not <em>break/wordwrap</em> at the end of a line of text. Instead, the browser will find the nearest space before and break there. Why would you want to do this? It keeps words together, thats why.</p>
+
+<h2>Example</h2>
+
+<p>Say i&#8217;m writing some copy for a web site, Its not much, just one paragraph about 10 lines long. At the end of the first line is the company name, &#8220;Crazyman Company&#8221;. But the &#8220;Crazyman&#8221; and the &#8220;Company&#8221; are on different lines because they don&#8217;t both fit on the first line, so &#8220;Company&#8221; gets wrapped onto the line below. Simple, instead of typing &#8220;<code>Crazyman Company</code>&#8221;, use &#8220;<code>Crazyman&amp;amp;nbsp;Company</code>. Now the browser will wrap at the space  before the &#8220;Crazyman&#8221; so the company name stays together, giving it more impact and making it easier to read.</p>
+
+<h2><span class="caps">OK, </span>but why?</h2>
+
+<p>Beacuse it looks nicer, you&#8217;re supposed to be a web designer? go figure.</p>]]>
+    </content>
+</entry>
+<entry>
+    <title>New Desktops</title>
+    <link rel="alternate" type="text/html" href="http://www.whatisnext.co.uk/journal/2006/04/new_desktops.php" />
+    <link rel="service.edit" type="application/atom+xml" href="http://www.whatisnext.co.uk/cgi-bin/mt/mt-atom.cgi/weblog/blog_id=1/entry_id=549" title="New Desktops" />
+    <id>tag:www.whatisnext.co.uk,2006:/journal//1.549</id>
+    
+    <published>2006-04-13T13:32:57Z</published>
+    <updated>2006-04-14T16:23:55Z</updated>
+    
+    <summary>Check out the new Desktops, free to download and do with as you please! I&apos;ll be adding more every month (hopefully!), so keep coming back. Subscribe to the journal RSS/Atom feeds for easy updates....</summary>
+    <author>
+        <name>Phil</name>
+        <uri>http://www.whatisnext.co.uk</uri>
+    </author>
+            <category term="whatisnext.co.uk" />
+    
+    <content type="html" xml:lang="en" xml:base="http://www.whatisnext.co.uk/journal/">
+        <![CDATA[<p>Check out the new <a href="/projects/desktops/">Desktops</a>, free to download and do with as you please! I'll be adding more every month <em>(hopefully!)</em>, so keep coming back. Subscribe to the journal <a href="http://www.whatisnext.co.uk/journal/syndicate/rss.xml">RSS</a>/<a href="http://www.whatisnext.co.uk/journal/syndicate/atom.xml">Atom</a> feeds for easy updates.</p>]]>
+        
+    </content>
+</entry>
+<entry>
+    <title>What happend to the Blue?</title>
+    <link rel="alternate" type="text/html" href="http://www.whatisnext.co.uk/journal/2006/04/what_happend_to_the_blue.php" />
+    <link rel="service.edit" type="application/atom+xml" href="http://www.whatisnext.co.uk/cgi-bin/mt/mt-atom.cgi/weblog/blog_id=1/entry_id=548" title="What happend to the Blue?" />
+    <id>tag:www.whatisnext.co.uk,2006:/journal//1.548</id>
+    
+    <published>2006-04-13T09:38:24Z</published>
+    <updated>2006-04-20T08:54:04Z</updated>
+    
+    <summary>Put simply, i got a bit boarded of it. It was all getting too dark around here and as you might have noticed (or not), I&apos;ve been doing some pretty big changes, all in full view of the masses. Which...</summary>
+    <author>
+        <name>Phil</name>
+        <uri>http://www.whatisnext.co.uk</uri>
+    </author>
+            <category term="whatisnext.co.uk" />
+    
+    <content type="html" xml:lang="en" xml:base="http://www.whatisnext.co.uk/journal/">
+        <![CDATA[<p>Put simply, i got a bit boarded of it. It was all getting too dark around here and as you might have noticed (or not), I've been doing some pretty big changes, all in full view of the masses. Which explains the green and red boxes <em>(for CSS problem solving)</em> all over the place, and why half the site doesn't work!</p>]]>
+        <![CDATA[<h2>What Works?</h2>
+
+<p>The <a href="/">Home page</a>, The <a href="/about/">About Page</a>, enough of the <a href="/journal">Journal</a>  to get started, and the projects page, although its only got some desktops at the moment, but do feel free to download them, most sizes are covered, and they do get updated.</p>
+
+<h2>What Doesn't</h2>
+
+<p><em>Everything else!</em>. The entire  <a href="/work">Work</a> area, which will be my portfolio of client work. Lots of back-end Journal Pages. </p>
+
+<p>Appolgies if anyone tries to comment and it doesn't work.</p>
+
+<h2>What's planned?</h2>
+
+<p>Lots of small <strong>un</strong>-important Journal Posts to fill things out a bit. My Work Portfolio. More free designer things like desktops, pretty ideas, typefaces. Amongst other things.</p>]]>
+    </content>
+</entry>
+<entry>
+    <title>What Would Macgyver Do?</title>
+    <link rel="alternate" type="text/html" href="http://www.whatisnext.co.uk/journal/2006/02/what_would_macgyver_do_1.php" />
+    <link rel="service.edit" type="application/atom+xml" href="http://www.whatisnext.co.uk/cgi-bin/mt/mt-atom.cgi/weblog/blog_id=1/entry_id=4" title="What Would Macgyver Do?" />
+    <id>tag:www.whatisnext.co.uk,2006:/journal//1.4</id>
+    
+    <published>2006-02-27T13:39:01Z</published>
+    <updated>2006-04-09T22:40:37Z</updated>
+    
+    <summary>If he was going to start a new web blog Journal, Well, he would probably construct some kind of clever machine that would be totally independant of human thought and be made out of matchsticks and double sided tape. Well,...</summary>
+    <author>
+        <name>Phil</name>
+        <uri>http://www.whatisnext.co.uk</uri>
+    </author>
+            <category term="General" />
+    
+    <content type="html" xml:lang="en" xml:base="http://www.whatisnext.co.uk/journal/">
+        <![CDATA[<p>If he was going to start a new <strike>web blog</strike> Journal, Well, he would probably construct some kind of clever machine that would be totally independant of human thought and be made out of matchsticks and <em>double</em> sided tape. </p>
+
+<p>Well, i'm not Macgyver, so i'll just do what everyone else does and have a couple of webpages with all the navigation down the right hand side, and talk about topics like web design, typography, 42, and some other useless things that will clog up all your news readers.</p>
+
+<p>Abit about me, I'm a struggling part-time designer, and after doing some pretty nice projects (i'll upload them soon) i needed somewhere to showcase them and explain what is was thinking at the time.</p>]]>
+        
+    </content>
+</entry>
+
+</feed> 
+

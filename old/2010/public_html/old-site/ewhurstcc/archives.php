@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="generator" content="Movable Type 3.2" />
+   
+   <link rel="stylesheet" href="http://www.whatisnext.co.uk/ecc/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.whatisnext.co.uk/ecc/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.whatisnext.co.uk/ecc/index.xml" />
+   
+   <title>Ewhurst Cricket Club: Archives by Php</title>
+   
+   <link rel="start" href="http://www.whatisnext.co.uk/ecc/" title="Home" />
+   
+   
+</head>
+<body class="layout-two-column-right">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+      
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.whatisnext.co.uk/ecc/" accesskey="1">Ewhurst Cricket Club</a></h1>
+               <h2 id="banner-description"></h2>
+            </div>
+         </div>
+         
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+                     <div class="archive-date-based archive">
+                        <h2 class="archive-header">Archives</h2>
+                        <div class="archive-content">
+                           <ul class="archive-list">
+                              
+                                 <li class="archive-list-item"><a href="http://www.whatisnext.co.uk/ecc/2006/01/beta_mode.php">Beta Mode</a></li>
+                              
+                                 <li class="archive-list-item"><a href="http://www.whatisnext.co.uk/ecc/2005/12/second_entry.php">Second Entry</a></li>
+                              
+                                 <li class="archive-list-item"><a href="http://www.whatisnext.co.uk/ecc/2005/12/first_entry.php">First Entry</a></li>
+                              
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+                     <div class="module-search module">
+                        <h2 class="module-header">Search</h2>
+                        <div class="module-content">
+                           <form method="get" action="http://www.whatisnext.co.uk/cgi-bin/mt/mt-search.cgi">
+                              <input type="hidden" name="IncludeBlogs" value="4" />
+                              <label for="search" accesskey="4">Search this blog:</label><br />
+                              <input id="search" name="search" size="20" />
+                              <input type="submit" value="Search" />
+                           </form>
+                        </div>
+                     </div>
+
+                     
+                     <div class="module-categories module">
+                        <h2 class="module-header">Categories</h2>
+                        <div class="module-content">
+                           
+                           <ul class="module-list">
+                           
+                              <li class="module-list-item"><a href="http://www.whatisnext.co.uk/ecc/committee_updates/" title="">Committee Updates</a>
+                           
+                           
+                           
+                              </li>
+                           
+                           
+                           
+                           
+                              <li class="module-list-item">General
+                           
+                           
+                              </li>
+                           
+                           
+                           
+                           
+                              <li class="module-list-item">Match Reports
+                           
+                           
+                              </li>
+                           
+                           
+                           
+                           
+                              <li class="module-list-item">Tour Reports
+                           
+                           
+                              </li>
+                           
+                           
+                           
+                           
+                              <li class="module-list-item">Website Updates
+                           
+                           
+                              </li>
+                           </ul>
+                           
+                        </div>
+                     </div>
+                     
+
+                     
+                        <div class="module-archives module">
+                           <h2 class="module-header">Archives</h2>
+                           <div class="module-content">
+                           
+                              
+                                 <ul class="module-list">
+                              
+                              <li class="module-list-item"><a href="http://www.whatisnext.co.uk/ecc/2006/01/">January 2006</a></li>
+                              
+                           
+                              
+                              <li class="module-list-item"><a href="http://www.whatisnext.co.uk/ecc/2005/12/">December 2005</a></li>
+                              
+                                 </ul>
+                              
+                           
+                           </div>
+                        </div>
+                     
+                     
+                     <div class="module-archives module">
+                        <h2 class="module-header">Recent Posts</h2>
+                        <div class="module-content">
+                           <ul class="module-list">
+                           
+                              <li class="module-list-item"><a href="http://www.whatisnext.co.uk/ecc/2006/01/beta_mode.php">Beta Mode</a></li>
+                           
+                              <li class="module-list-item"><a href="http://www.whatisnext.co.uk/ecc/2005/12/second_entry.php">Second Entry</a></li>
+                           
+                              <li class="module-list-item"><a href="http://www.whatisnext.co.uk/ecc/2005/12/first_entry.php">First Entry</a></li>
+                           
+                           </ul>
+                        </div>
+                     </div>
+                     
+                     <div class="module-syndicate module">
+                        <div class="module-content">
+                           <a href="http://www.whatisnext.co.uk/ecc/atom.xml">Subscribe to this blog's feed</a><br />
+                           [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                        </div>
+                     </div>
+                     
+                     
+                     
+                     <div class="module-powered module">
+                        <div class="module-content">
+                           Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type 3.2</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

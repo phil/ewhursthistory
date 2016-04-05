@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>whatisnext.co.uk - Destinations</title>
+    <link rel="alternate" type="text/html" href="http://www.whatisnext.co.uk/destinations/" />
+    <link rel="self" type="application/atom+xml" href="http://www.whatisnext.co.uk/destinations/atom.xml" />
+   <id>tag:www.whatisnext.co.uk,2006:/destinations/8</id>
+    <link rel="service.post" type="application/atom+xml" href="http://www.whatisnext.co.uk/cgi-bin/mt/mt-atom.cgi/weblog/blog_id=8" title="whatisnext.co.uk - Destinations" />
+    <updated></updated>
+    
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 3.2</generator>
+ 
+
+</feed> 
+

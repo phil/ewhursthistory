@@ -1,0 +1,28 @@
+#body-home #content-wrapper, #body-home #content-wrapper #content
+{
+    margin: 0px;
+    padding: 5px 5px 0px 5px;
+    
+    width: auto;
+}
+
+#feature-link-newclearsun, #feature-link-newclearsun:link, #feature-link-newclearsun:visited
+{
+    margin: 0px;
+    padding: 0px;
+    
+    display: block;
+    
+    width: auto;
+    height: 250px;
+    
+    background: transparent url(/mastheads/torch.jpg) no-repeat scroll top center;
+}
+#feature-link-newclearsun:hover
+{
+    background: transparent url(/mastheads/torch-over.jpg) no-repeat scroll top center;
+}
+#feature-link-newclearsun span
+{
+    display: none;
+}

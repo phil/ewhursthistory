@@ -1,0 +1,247 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font: normal normal lighter 85%/1.5em Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+	margin: 0px;
+	padding: 0px;
+
+	width: auto;
+	height: 150px;
+	line-height: 150px;
+
+	clear: both;
+
+	background: #000 url(../img/banner.jpg) scroll no-repeat top center;
+	text-align: center;
+}
+h1 span
+{
+visibility: hidden;
+}
+
+p
+{
+		
+}
+
+*/ Nav
+------------------------------------------------------ */
+#navigation-wrapper
+{
+	margin: 0px;
+	padding: 0px;
+
+	height: 3em;
+
+}
+
+#navigation-wrapper dt
+{
+	margin: 0px 10px;
+	padding: 0px;
+	float: left;
+
+	font-size: 1em;
+	line-height: 3em;
+
+}
+#navigation-wrapper dd
+{
+	display: none;
+}
+
+#navigation-wrapper a, #navigation-wrapper a:link, #navigation-wrapper a:visited
+{
+	color: #666;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	font-size: 0.8em
+}
+
+#navigation-wrapper a:hover
+{
+	text-decoration: underline;
+}
+
+
+#desktops-navigation ul
+{
+	
+}
+
+#desktops-navigation ul li
+{
+	margin: 0px;
+	padding: 0px;
+	
+	display: inline;
+	float: left;
+	width: 16em;
+}
+#desktops-navigation ul li.clear
+{
+	clear: both;
+	float: none;
+	height: 1px;
+	display: block
+}
+
+#desktops-navigation ul li a, #desktops-navigation ul li a:link
+{
+	color: #05b;
+	text-decoration: none;
+}
+#desktops-navigation ul li a:visted
+{
+	
+}
+#desktops-navigation ul li a:hover
+{
+	color: #000;
+	trext-decoration: underline;
+}
+#desktops-navigation ul li a span.cat-label, #desktops-navigation ul li a:link span.cat-label
+{
+}
+#desktops-navigation ul li a:visted span.cat-label
+{
+}
+#desktops-navigation ul li a:hover span.cat-label
+{
+}
+#desktops-navigation ul li a span.cat-count, #desktops-navigation ul li a:link span.cat-count
+{
+	color: #666;
+}
+#desktops-navigation ul li a:visted span.cat-count
+{
+	
+}
+#desktops-navigation ul li a:hover span.cat-count
+{
+	color: #000;
+}
+
+*/ Desktops
+------------------------------------------------------ */
+	
+.desktop-list
+{
+	margin: 0em;
+	padding: 0em;
+	list-style: none
+}
+.desktop-list li
+{
+	margin: 30px 0px 0px 30px;
+	padding: 0px;
+	float: left;
+	display: inline
+	width: 262px;
+	background: transparent none no-repeat scroll top;
+	list-style: none;
+}
+
+.desktop
+{
+	position: relative;
+	width: 262px;
+}
+
+.desktop h3
+{
+	margin: 0px 3px;
+	padding: 0px;
+	color: #333;
+	font: normal normal lighter 1em/2em Arial, Helvetica, sans-serif;
+	border: none;
+}
+
+.desktop-categories
+{
+	margin: 0px 3px;
+	font-size: 0.7em;
+	color: #999;
+}
+.desktop-categories a, .desktop-categories a:link, .desktop-categories a:visited
+{
+	margin: 0px 6px 0px 0px;
+	color: #666;
+	text-decoration: none
+}
+.desktop-categories a:hover
+{
+	color: #333;
+}
+
+.desktop img
+{
+	margin: 0px;
+	padding: 2px;
+	border: 1px solid #ddd;
+	float: left;
+	display: inline;
+}
+
+.desktop .downloads
+{
+	margin: 0px 0px 0px 136px;
+	padding: 0px;
+
+	width: 126px;
+
+	border-top: 1px solid #ddd;
+}
+.desktop .downloads li
+{
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 1px solid #ddd;
+	float: none;
+	width: 126px;
+}
+.desktop .downloads li a, .desktop .downloads li a:link
+{
+	margin: 0px;
+	padding: 0px 10px;
+	display: block;
+	font-size: 0.8em;
+color: #05b;
+	text-decoration: none;
+	line-height: 2em;
+}
+.desktop .downloads li a:visited
+{
+color: #046;
+}
+.desktop .downloads li a:hover
+{
+color: #333;
+background-color: #eee;
+}
+
+.desktop-footer
+{
+	margin: 0px;
+	padding: 0px;
+	/*clear: both;*/
+	height: 1px;
+}	
+
+
+
+#footer-wrapper
+{
+	margin: 0px;
+	padding: 0px;
+
+	display: block;
+	float: none;
+	clear: both;
+}

@@ -1,0 +1,63 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	
+	background: #202a46 url(/img/home-background.jpg) scroll repeat 50% 50%;
+}
+
+#wrapper
+{
+	margin: auto;
+	padding: 0px;
+	
+	width: 840px;
+	height: 100%;
+
+	background: none;
+}
+
+#about
+{
+	width: 264px;
+	height: 199px;
+
+	background: transparent url(/img/home-about-background.jpg) scroll no-repeat 50% 50%;
+}
+
+#navigation
+{
+	width: 264px;
+	height: 199px;
+
+	background: transparent url(/img/home-nav-background.jpg) scroll no-repeat 50% 50%;
+}
+
+#feature
+{
+	width: 264px;
+	height: 199px;
+}
+
+h1
+{
+}
+
+h2
+{
+	display: none;
+}
+
+p
+{
+}
+
+a, a:link
+{
+}
+a:visited
+{
+}
+a:hover
+{
+}
