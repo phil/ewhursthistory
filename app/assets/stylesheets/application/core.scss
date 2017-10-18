@@ -132,8 +132,8 @@ article.programme {
   padding-top: 3em;
 }
 
-article.programme.historical {
-  color: #999 !important;
+article.programme.historical * {
+  color: #999;
 }
 
 article.programme>header>h2, article.programme>header>p {
