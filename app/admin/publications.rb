@@ -30,7 +30,7 @@ ActiveAdmin.register Publication do
       f.input :description, as: :html_editor
     end
     f.inputs "Images" do
-      content_tag(:div, image_tag(f.object.cover.url(:small)))
+      div, image_tag(f.object.cover.url(:small))
       f.input :cover #, as: :file
     end
     f.actions
