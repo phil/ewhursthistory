@@ -21,10 +21,10 @@ class Post < ActiveRecord::Base
 
   def self.programme(for_date = Date.current)
     programme_starts_on = case for_date.month
-    when < 9
-      Date.new(for_date.year - 1, 09, 01)
+    when 0..9
+      Date.new(for_date.year - 1, 9, 1)
     else
-      Date.new(for_date.year, 09, 01)
+      Date.new(for_date.year, 9, 1)
     end
 
     programme_ends_on = ((programme_starts_on + 1.year) - 1.day)
