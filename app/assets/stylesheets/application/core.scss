@@ -2,7 +2,7 @@ $primary-color: rgba(0, 0, 0, 0.7);
 $keyline: 1px solid rgba(0, 0, 0, 0.8);
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Baskerville Old Face", "Times New Roman", Times, serif; 
+  font-family: "Baskerville Old Face", "Times New Roman", Times, serif;
   font-weight: normal;
 
   color: #333;
@@ -127,6 +127,15 @@ nav {
 }
 
 article.programme {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
+  border-top: 1px solid #ddd !important;
+  padding-top: 3em;
 }
 
+article.programme.historical {
+  color: #666;
+}
+
+article.programme>header>h2, article.programme>header>p {
+  margin-bottom: 0.5em;
+}

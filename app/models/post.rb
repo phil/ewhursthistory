@@ -9,28 +9,31 @@ class Post < ActiveRecord::Base
   # Past posts
   scope :news, -> { published.where(post_type: "News").order("published_at DESC") }
   # future posts
-  scope :meetings, -> { future.where(post_type: "Meeting").order("published_at ASC") }
-  scope :events, -> { future.where(post_type: "Event").order("published_at ASC") }
-
-  scope :programme, -> { where("date_trunc('DAY', published_at) >= date_trunc('DAY', now() - '1 DAY'::interval)").where(post_type: ["Meeting", "Event"]).order("published_at ASC") }
+  scope :meetings, -> { where(post_type: "Meeting").order("published_at ASC") }
+  scope :events, -> { where(post_type: "Event").order("published_at ASC") }
 
   def self.next_meeting
-    self.meetings.first
+    self.meetings.future.first
   end
   def self.next_events
-    self.events
+    self.events.future
   end
 
-  #def programme_start_date
-  #end
+  def self.programme(for_date = Date.current)
+    programme_starts_on = case for_date.month
+    when < 9
+      Date.new(for_date.year - 1, 09, 01)
+    else
+      Date.new(for_date.year, 09, 01)
+    end
 
-  #def programme_end_date
-  #end
+    programme_ends_on = ((programme_starts_on + 1.year) - 1.day)
+
+    where(published_at: [programme_starts_on, programme_ends_on]).where(post_type: ["Meeting", "Event"]).order("published_at ASC") }
+  end
 
   def to_param
     "#{self.id}-#{self.title.parameterize}"
   end
-
-  private
 
 end
