@@ -1,12 +1,14 @@
 source 'https://rubygems.org'
 
-ruby "2.3.0"
+ruby "2.7.1"
 
 gem 'rack-rewrite'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails'
+gem 'rails', '5.2'
 
+
+gem 'dotenv-rails'
 gem "pg"
 
 # gem "unicorn"
@@ -18,9 +20,9 @@ gem 'newrelic_rpm', group: :production
 gem "postmark-rails"
 
 # Assets
-gem 'sass-rails', '~> 4.0.3' # Use SCSS for stylesheets
+gem 'sass-rails' #, '~> 4.0.3' # Use SCSS for stylesheets
 gem 'uglifier', '>= 1.3.0' # Use Uglifier as compressor for JavaScript assets
-gem 'coffee-rails', '~> 4.0.0' # Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails' #, '~> 5.0.0' # Use CoffeeScript for .js.coffee assets and views
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 #gem 'therubyracer',  platforms: :ruby
 
@@ -35,12 +37,12 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 group :development do
-  gem 'spring'
-  gem "spring-commands-rspec"
+  # gem 'spring'
+  # gem "spring-commands-rspec"
 end
 
 gem 'activeadmin', github: 'gregbell/active_admin'
-gem 'active_admin_editor'
+gem 'active_admin_editor', github: 'ejholmes/active_admin_editor'
 gem "devise" # For active admin
 
 gem 'ancestry' # Active Record Tree structure

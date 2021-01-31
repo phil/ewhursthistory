@@ -1,6 +1,7 @@
-ActiveAdmin.register Page do
+ActiveAdmin.register Page, as: "SitePage" do
 
-  permit_params :title, :body, :parent_id, :label, :published_at, :template
+  permit_params :title, :body, :parent_id, :label, :published_at, :template,
+    :attachments_attributes
 
   index do
     Page.top_level.each do |page|
@@ -31,39 +32,66 @@ ActiveAdmin.register Page do
   end
 
   show do
-    raw page.body
+    div do
+      raw site_page.body
+    end
+
+    h2 "Attachments"
+
+    site_page.attachments.each do |attachment|
+      hr
+
+      h3 do 
+        text_node attachment.title
+         status_tag "un-published" if attachment.published_on.blank?
+      end
+
+      div do
+        text_node link_to("Edit", admin_site_page_attachment_path(attachment.page, attachment)) + " | " + link_to("Download", attachment.file.url)
+
+        div do
+          attachment.description
+        end
+      end
+
+    end
   end
 
   sidebar "details", only: :show do
     dl do
       dt "Label"
-      dd page.label
+      dd site_page.label
 
-      if page.parent
+      if site_page.parent
         dt "Parent"
-        dd link_to page.parent.title, resource_path(page.parent)
+        dd link_to site_page.parent.title, resource_path(site_page.parent)
       end
 
-      if page.children
+      if site_page.children
         dt "Child pages"
-        page.children.each do |child_page|
+        site_page.children.each do |child_page|
           dd link_to child_page.title, resource_path(child_page)
         end
       end
 
       dt "Slug"
-      dd page.slug
+      dd site_page.slug
 
       dt "Template"
-      dd page.template
+      dd site_page.template
 
       dt "Published date"
-      dd page.published_at
+      dd site_page.published_at
     end
   end
+
   sidebar "Images", only: :show do 
-    text_node link_to("New image", [:new, :admin, page, :image])
-    render "images/list", images: page.images
+    text_node link_to("New image", new_admin_site_page_image_path(site_page)) #[:new, :admin, site_page, :image])
+    render "images/list", images: site_page.images
+  end
+
+  sidebar "Attachments", only: :show do
+    text_node link_to("New attachment", new_admin_site_page_attachment_path(site_page)) #[:new, :admin, site_page, :image])
   end
 
   form do |f|

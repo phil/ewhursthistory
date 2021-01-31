@@ -11,13 +11,19 @@
   </div>
 
   <div class="four columns">
-    <h2>First World War</h2>
-    <%= image_tag "world_war_one_logo.png", width: "100%" %>
-    <p>August 2014 marks the 100th anniversary of the outbreak of the First World War. I am researching what happened in Ewhurst and I am planning to report events chronologically in the form of monthly posts on this web site. As the story unfolds month by month we can appreciate the time scale of these momentous years and see the part played by local people in the war and how it affected everyday life in Ewhurst</p>
-    <p>Janet Balchin,</br />
-      Chairman, Ewhurst History Society<br />
-      August 2014.</p>
+    <h2><%= link_to "Journal", "/journal" %></h2>
 
+    <ul>
+      <% Page.where(slug: "journal").first.attachments.take(5).each do |attachment| %>
+        <li><%= link_to attachment.title, attachment.file.url %></li>
+      <% end %>
+    </ul>
+
+    <hr />
+
+    <h2><%= link_to "First World War", "/ewhurst-in-the-great-war" %></h2>
+
+    <%= link_to image_tag("world_war_one_logo.png", width: "100%"), "/ewhurst-in-the-great-war" %>
     <% if @current_first_world_war_page %>
       <p><%= link_to @current_first_world_war_page.title, @current_first_world_war_page.full_path %></p>
     <% end %>
@@ -27,8 +33,8 @@
     <h2><%= link_to "Next meeting", programme_url %></h2>
     <% if @next_meeting %>
       <p>
-        <%= @next_meeting.published_at.to_s(:calendar) %><br />
-        <%= @next_meeting.title %>
+      <%= @next_meeting.published_at.to_s(:calendar) %><br />
+      <%= @next_meeting.title %>
       </p>
     <% else %>
       <p>The next programme meeting has yet to be scheduled</p>
@@ -38,8 +44,8 @@
       <h2><%= link_to "Upcoming Events", programme_url %></h2>
       <% @next_events.each do |next_event| %>
         <p>
-          <%= next_event.published_at.to_s(:calendar) %><br />
-          <%= next_event.title %>
+        <%= next_event.published_at.to_s(:calendar) %><br />
+        <%= next_event.title %>
         </p>
       <% end %>
     <% end %>

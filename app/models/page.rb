@@ -3,10 +3,14 @@ class Page < ActiveRecord::Base
 
   include Imageable
 
+  has_many :attachments
+  accepts_nested_attributes_for :attachments
+
   TEMPLATES = [
     "default",
     "world_war_one_index",
-    "world_war_one_page"
+    "world_war_one_page",
+    "journal_index"
   ]
 
   def images_not_in_page
