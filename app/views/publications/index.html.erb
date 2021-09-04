@@ -6,7 +6,7 @@
 </div>
 
 <% @publications.each do |publication| %>
-  <div class="row">
+  <div class="row" style="border-top: 1px solid #999; margin-top: 20px; padding-top: 20px">
 
     <div class="four columns offset-by-one publication_cover">
       <%= image_tag publication.cover.url %>
