@@ -18,7 +18,7 @@
       <%= publication.description.html_safe %>
 
       <% if publication.download? %>
-        <%= link_to "Download PDF", publication.download.url %>
+        <%= link_to "Download #{publication.title} as a PDF", publication.download.url, target: "_blank" %>
       <% end %>
     </div>
 
