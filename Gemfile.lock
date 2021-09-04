@@ -119,9 +119,6 @@ GEM
     dry-inflector (0.2.0)
     ejs (1.1.1)
     erubi (1.10.0)
-    exception_notification (4.4.3)
-      actionmailer (>= 4.0, < 7)
-      activesupport (>= 4.0, < 7)
     excon (0.78.1)
     execjs (2.7.0)
     ffi (1.14.2)
@@ -482,7 +479,6 @@ DEPENDENCIES
   coffee-rails
   devise
   dotenv-rails
-  exception_notification
   fog
   jquery-rails
   kaminari
