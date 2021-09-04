@@ -1,5 +1,5 @@
 ActiveAdmin.register Publication do
-  permit_params :title, :published_at, :description, :cover
+  permit_params :title, :published_at, :description, :cover, :download
 
   index do
     selectable_column
