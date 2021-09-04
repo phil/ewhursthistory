@@ -15,7 +15,7 @@ ActiveAdmin.register Publication do
   end
 
   sidebar "Cover", only: :show do
-      image_tag publication.cover.url(:large)
+    image_tag publication.cover.try(:url, :large)
   end
 
   #filter :email
@@ -31,7 +31,7 @@ ActiveAdmin.register Publication do
     end
     f.inputs "Images" do
       div do 
-        image_tag(f.object.cover.url(:small))
+        image_tag(f.object.cover.try(:url, :small))
       end
       f.input :cover #, as: :file
     end
