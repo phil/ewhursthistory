@@ -16,6 +16,10 @@
       <h1><%= publication.title %></h1>
 
       <%= publication.description.html_safe %>
+
+      <% if publication.download? %>
+        <%= link_to "Download PDF", publication.download.url %>
+      <% end %>
     </div>
 
   </div>

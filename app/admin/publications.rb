@@ -35,6 +35,11 @@ ActiveAdmin.register Publication do
       end
       f.input :cover #, as: :file
     end
+    f.inputs "Downloads" do
+      div do
+        f.input :download #, as: file
+      end
+    end
     f.actions
   end
 
