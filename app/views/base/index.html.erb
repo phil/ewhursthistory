@@ -14,7 +14,7 @@
     <h2><%= link_to "Journal", "/journal" %></h2>
 
     <ul>
-      <% Page.where(slug: "journal").first.attachments.order(:published_at).limit(5).each do |attachment| %>
+      <% Page.where(slug: "journal").first.attachments.order(:published_on).limit(5).each do |attachment| %>
         <li><%= link_to attachment.title, attachment.file.url %></li>
       <% end %>
     </ul>
