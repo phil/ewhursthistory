@@ -9,7 +9,7 @@
     </article>
 
 
-    <% @page.attachments.each do |attachment| %>
+    <% @page.attachments.order("published_on ASC").each do |attachment| %>
     <hr />
       <h2><%= link_to attachment.title, attachment.file.url %></h2>
       <%= attachment.description.html_safe %>
