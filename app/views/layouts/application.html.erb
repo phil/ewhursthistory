@@ -1,35 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-
-    <title><%= yield :page_title %> - Ewhurst History Society</title>
-
-    <meta name="description" content="Ewhurst History Society">
-    <meta name="keywords" content="Ewhurst, history, society, Surrey, Cranleigh, Guildford, England, UK">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-
+    <title><%= content_for(:title) || "Ewhursthistory" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Ewhursthistory">
+    <meta name="mobile-web-app-capable" content="yes">
     <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
+    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
   </head>
-  <body class="controller_<%= controller.to_s %>">
-    <div class="container">
 
-      <%= render "shared/header" %>
-
-      <%= render "shared/nav" %>
-
-      <%= render "shared/subnav" %>
-
-      <main>
-      <%= yield %>
-      </main>
-
-      <%= render "shared/footer" %>
-
-    </div>
+  <body>
+    <%= yield %>
   </body>
 </html>

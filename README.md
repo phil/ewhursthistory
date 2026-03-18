@@ -1,7 +1,24 @@
-# Ewhurst History
+# README
 
-[![Build Status](https://travis-ci.org/phil/ewhursthistory.svg?branch=master)](https://travis-ci.org/phil/ewhursthistory)
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-##Deployment / Production
+Things you may want to cover:
 
-Pushing to master will automatically deploy to heroku if CI passes
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

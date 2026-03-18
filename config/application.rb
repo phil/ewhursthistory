@@ -1,35 +1,27 @@
-require File.expand_path('../boot', __FILE__)
+require_relative "boot"
 
-require 'rails/all'
+require "rails/all"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module EwhurstHistory
+module Ewhursthistory
   class Application < Rails::Application
-    config.middleware.insert_before(Rack::Runtime, Rack::Rewrite) do
-      #rewrite   '/wiki/John_Trupiano',  '/john'
-      #r301      '/wiki/Yair_Flicker',   '/yair'
-      #r302      '/wiki/Greg_Jastrab',   '/greg'
-      #r301      %r{/wiki/(\w+)_\w+},    '/$1'
-      r301 "/default.asp", "/"
-      r301 "/v2/default.asp", "/"
+    # Initialize configuration defaults for originally generated Rails version.
+    config.load_defaults 8.1
 
-      r301 "/about/ewhurstbriefhistory.php", "/about-ewhurst/a-brief-history-of-ewhurst"
-    end
+    # Please, add to the `ignore` list any other `lib` subdirectories that do
+    # not contain `.rb` files, or that should not be reloaded or eager loaded.
+    # Common ones are `templates`, `generators`, or `middleware`, for example.
+    config.autoload_lib(ignore: %w[assets tasks])
+
+    # Configuration for the application, engines, and railties goes here.
     #
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
-
-    # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
-    # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
-    config.time_zone = "London"
-
-    # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-     config.i18n.default_locale = :"en-GB"
-
+    # These settings can be overridden in specific environments using the files
+    # in config/environments, which are processed later.
+    #
+    # config.time_zone = "Central Time (US & Canada)"
+    # config.eager_load_paths << Rails.root.join("extras")
   end
 end

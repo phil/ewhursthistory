@@ -1,1 +1,0 @@
-<a href="/syndication">Syndication</a>

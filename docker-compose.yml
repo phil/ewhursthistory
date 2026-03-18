@@ -1,0 +1,38 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - database
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app:delegated
+      - gem_cache:/usr/local/bundle/gems
+    environment:
+      RAILS_ENV: development
+
+  database:
+    image: postgres:18.0
+    volumes:
+      - db_data:/var/lib/postgresql
+    environment:
+      - POSTGRES_USER=dev_user
+      - POSTGRES_PASSWORD=123456abcdef
+
+  localstack:
+    image: localstack/localstack
+    ports:
+      - "4566:4566"            # LocalStack Gateway
+      - "4510-4559:4510-4559"  # external services port range
+    environment:
+      # LocalStack configuration: https://docs.localstack.cloud/references/configuration/
+      - DEBUG=${DEBUG:-0}
+    volumes:
+      - localstack_data:/var/lib/localstack"
+
+volumes:
+  gem_cache:
+  db_data:
+  localstack_data:

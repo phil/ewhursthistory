@@ -1,1 +1,0 @@
-&copy; 2004 Next Century Systems Ltd. whatisnext.co.uk is part of Next Century Systems Ltd.
